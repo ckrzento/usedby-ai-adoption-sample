@@ -71,6 +71,15 @@ class SampleTests(unittest.TestCase):
         self.assertEqual(result["tools"][:2], ["a-101", "b"])
         self.assertNotIn("a-0", result["tools"])
 
+    def test_publication_matches_source_review(self):
+        root = Path(__file__).resolve().parents[2]
+        audit = json.loads((root / "source-checks.json").read_text())
+        reviewed = {(r["claim_id"], r["source_url"]) for r in audit["checks"] if r["decision"] == "retain"}
+        published = [json.loads(line) for line in (root / "data.jsonl").read_text().splitlines()]
+        self.assertEqual(reviewed, {(r["claim_id"], r["source_url"]) for r in published})
+        self.assertEqual(len(audit["checks"]), audit["reviewed_rows"])
+        self.assertEqual(len(published), audit["retained"])
+
     def test_withdrawn_source_is_excluded(self):
         payload = response()
         payload["customers"]["listed"][0]["claim"]["source"]["url"] = next(iter(BLOCKED_SOURCES))

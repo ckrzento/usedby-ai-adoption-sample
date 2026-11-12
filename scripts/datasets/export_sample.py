@@ -21,6 +21,14 @@ BLOCKED_SOURCES = {
 }
 
 
+AUDIT_PATH = Path(__file__).resolve().parents[2] / "source-checks.json"
+REJECTED_EVIDENCE = {
+    (entry["claim_id"], entry["source_url"])
+    for entry in json.loads(AUDIT_PATH.read_text(encoding="utf-8"))["checks"]
+    if entry["decision"] == "exclude"
+}
+
+
 def utc_now():
     return datetime.now(timezone.utc).isoformat()
 
@@ -66,6 +74,9 @@ def extract(payload, expected_slug, collected_at):
             continue
         if source["url"] in BLOCKED_SOURCES:
             excluded["withdrawn_source"] += 1
+            continue
+        if (claim["id"], source["url"]) in REJECTED_EVIDENCE:
+            excluded["unsupported_source"] += 1
             continue
         checked = date_or_none(claim["proof"].get("checkedAt"))
         if checked is None:

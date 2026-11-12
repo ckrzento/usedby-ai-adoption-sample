@@ -20,7 +20,7 @@ Use this dataset to find a documented example of a company using an AI tool. Eac
 
 ## How the sample is built
 
-The exporter starts from the [public tool directory](https://www.usedby.ai/tools). Within each category it orders tools by confirmed relationship count, then slug. It takes one tool per category per round, in category slug order, up to 100 tools. For each tool it reads the first 100 public customer rows. It keeps distinct company–tool pairs marked `CONFIRMED` with a public source and a recorded proof check. Known withdrawn source URLs are excluded.
+The exporter starts from the [public tool directory](https://www.usedby.ai/tools). Within each category it orders tools by confirmed relationship count, then slug. It takes one tool per category per round, in category slug order, up to 100 tools. For each tool it reads the first 100 public customer rows. It keeps distinct company–tool pairs marked `CONFIRMED` with a public source and a recorded proof check. Known withdrawn URLs and previously rejected claim/source pairs are excluded. Monthly builds produce review candidates. A release may contain fewer rows after evidence review.
 
 The sample takes one relationship per tool each round, in tool slug order, up to 500 rows. Each tool contributes its non-stale records first, then its most recently checked records. Company slug breaks ties. The [manifest](https://github.com/ckrzento/usedby-ai-adoption-sample/blob/main/manifest.json) records the inventory, response hashes, counts and collection times.
 
