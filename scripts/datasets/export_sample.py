@@ -6,7 +6,7 @@ import json
 import re
 import time
 import socket
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -14,6 +14,11 @@ from urllib.parse import urlsplit
 from urllib.error import HTTPError, URLError
 
 BASE = "https://www.usedby.ai"
+
+
+BLOCKED_SOURCES = {
+    "https://www.patronus.ai/case-studies/weaviate-leverages-patronus-percival-to-accelerate-complex-ai-agent-development",
+}
 
 
 def utc_now():
@@ -59,6 +64,9 @@ def extract(payload, expected_slug, collected_at):
         if not public_url(source.get("url")):
             excluded["no_public_source"] += 1
             continue
+        if source["url"] in BLOCKED_SOURCES:
+            excluded["withdrawn_source"] += 1
+            continue
         checked = date_or_none(claim["proof"].get("checkedAt"))
         if checked is None:
             excluded["no_check_date"] += 1
@@ -99,8 +107,16 @@ def select(rows, limit):
         if row["claim_id"] in ids and ids[row["claim_id"]] != pair:
             raise ValueError("duplicate_conflict: claim ID maps to multiple pairs")
         pairs[pair], ids[row["claim_id"]] = row, pair
-    ordered = sorted(pairs.values(), key=lambda r: hashlib.sha256(
-        (r["tool_slug"] + "/" + r["company_slug"]).encode()).hexdigest())
+    groups = defaultdict(list)
+    for row in pairs.values():
+        groups[row["tool_slug"]].append(row)
+    ranked = []
+    for slug, group in groups.items():
+        group.sort(key=lambda r: r["company_slug"])
+        group.sort(key=lambda r: r["proof_checked_at"], reverse=True)
+        group.sort(key=lambda r: r["proof_stale"])
+        ranked.extend((rank, slug, row) for rank, row in enumerate(group))
+    ordered = [row for _, _, row in sorted(ranked)]
     return ordered[:limit], len(pairs)
 
 
@@ -122,6 +138,22 @@ def fetch(url, opener=urlopen, sleeper=time.sleep):
                 delay = max(delay, int(retry_after))
             print(f"sample_retry: {type(error).__name__}; attempt={attempt + 2}; wait={delay}s", flush=True)
             sleeper(delay)
+
+
+def render_card(template, rows):
+    counts = Counter(r["tool_slug"] for r in rows)
+    tools = {r["tool_slug"]: r["tool"] for r in rows}
+    companies = len({r["company_slug"] for r in rows})
+    example = next((r for r in rows if r["tool_slug"] == "claude"), rows[0])
+    lines = [f'**{len(rows)} relationships · {len(tools)} tools · {companies} companies**',
+             "", f'Example: **{example["company"]}** and **{example["tool"]}**. '
+             f'[Public claim]({example["claim_url"]}) · [Original source]({example["source_url"]}).',
+             "", "```json", json.dumps(example, indent=2, ensure_ascii=False), "```",
+             "", "### Ten tools with the most rows in this sample", "",
+             "| Tool | Rows |", "| --- | ---: |"]
+    for slug, count in sorted(counts.items(), key=lambda item: (-item[1], item[0]))[:10]:
+        lines.append(f"| [{tools[slug]}]({BASE}/tools/{slug}) | {count} |")
+    return template.replace("{{preview}}", "\n".join(lines))
 
 
 def run(inventory, output, limit=500, delay=2.1, fetcher=fetch):
@@ -161,8 +193,8 @@ def run(inventory, output, limit=500, delay=2.1, fetcher=fetch):
                 "rows_read": sum(r["rows_read"] for r in receipts), "eligible_unique_pairs": unique,
                 "sample_rows": len(sample), "requested_maximum": limit, "excluded": dict(excluded),
                 "deduplication": "Exact tool_slug/company_slug pair; conflicting pairs or claim IDs fail",
-                "selection": "Lowest SHA-256(tool_slug/company_slug), at most requested_maximum",
-                "selection_bias": "Name/category query seed; public evidence only; first-page proof-strength ordering; CONFIRMED with public source and check date only. Not representative of adoption or market share.",
+                "selection": "Round-robin by tool; non-stale first, then newest proof check, then company slug",
+                "selection_bias": "Category-balanced catalog subset; public evidence only; first-page proof-strength ordering; CONFIRMED with public source and check date only. Not representative of adoption or market share.",
                 "freshness": "Per-row checked/verified/captured dates; collected_at is retrieval, not verification. No global transactional snapshot.",
                 "license": "CC-BY-4.0",
                 "data_sha256": hashlib.sha256(data.encode()).hexdigest(), "receipts": receipts}
@@ -171,7 +203,7 @@ def run(inventory, output, limit=500, delay=2.1, fetcher=fetch):
     (output / "data.jsonl").write_text(data, encoding="utf-8")
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     card = Path(__file__).resolve().parents[2] / "docs/datasets/sample-card.md"
-    (output / "README.md").write_text(card.read_text(encoding="utf-8"), encoding="utf-8")
+    (output / "README.md").write_text(render_card(card.read_text(encoding="utf-8"), sample), encoding="utf-8")
     print(f"sample_complete: {len(sample)} rows -> {output}", flush=True)
     return manifest
 

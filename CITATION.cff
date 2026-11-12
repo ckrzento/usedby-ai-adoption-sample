@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "Cite the dataset and preserve the claim and primary-source URLs for individual records."
-title: "Usedby public AI usage evidence sample"
+title: "usedby public AI adoption sample"
 type: dataset
 authors:
-  - name: Usedby
-version: "2026.11.12"
+  - name: usedby
+version: "2026.11.12.2"
 date-released: "2026-11-12"
 license: CC-BY-4.0
 url: "https://github.com/ckrzento/usedby-ai-adoption-sample"
