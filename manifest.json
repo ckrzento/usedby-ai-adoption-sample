@@ -226,7 +226,7 @@
   "selection_bias": "Category-balanced catalog subset; public evidence only; first-page proof-strength ordering; CONFIRMED with public source and check date only. Not representative of adoption or market share.",
   "freshness": "Per-row checked/verified/captured dates; collected_at is retrieval, not verification. No global transactional snapshot.",
   "license": "CC-BY-4.0",
-  "data_sha256": "49994603fa6c6b9745aebbd14871702421372dac2cbf70b4ad74baa97cc675d0",
+  "data_sha256": "f8bd4d826513bb8e95ce9bfc88d30177cb217120c36c0063f242627154f8e038",
   "receipts": [
     {
       "tool_slug": "abnormal-ai",
@@ -1623,10 +1623,10 @@
   ],
   "source_review": {
     "review_date": "2026-11-12",
-    "reviewed_rows": 551,
-    "distinct_urls": 523,
+    "reviewed_rows": 552,
+    "distinct_urls": 524,
     "retained": 500,
-    "excluded": 51,
+    "excluded": 52,
     "original_input_sha256": "684def94f0da732f1a9d1c93da09175f4328338086f2a8e10b6ae198a4e405d2"
   },
   "backfill": {
@@ -1651,5 +1651,20 @@
     "source": "Public tool customer API, first 100 rows. Non-stale candidates with identifiable company source URLs. Original inventory and receipts above describe the initial collection. See source-checks.json for reviewed additions.",
     "collected_from": "2026-11-12T14:57:53.219948+00:00",
     "collected_through": "2026-11-12T14:58:47.198105+00:00"
+  },
+  "latest_source_review": {
+    "reviewed_at": "2026-11-12T15:59:03.694398+00:00",
+    "input_data_sha256": "49994603fa6c6b9745aebbd14871702421372dac2cbf70b4ad74baa97cc675d0",
+    "input_rows": 500,
+    "confirmed_claims_checked": 500,
+    "retained": 499,
+    "replaced": 1,
+    "alternate_source_urls": 3,
+    "comparison_counts": {
+      "identical": 470,
+      "blocked": 10,
+      "inspect": 3,
+      "stable passage": 17
+    }
   }
 }

@@ -62,7 +62,7 @@ The exporter starts from the [public tool directory](https://www.usedby.ai/tools
 
 The sample takes one relationship per tool each round, in tool slug order, up to 500 rows. Each tool contributes its non-stale records first, then its most recently checked records. Company slug breaks ties. The [manifest](https://github.com/ckrzento/usedby-ai-adoption-sample/blob/main/manifest.json) records the inventory, response hashes, counts and collection times.
 
-The initial audit retained 449 of 500 relationships. A second collection added 51 new pairs with directly checked primary sources. Each addition has a short description of the documented use in the [review log](https://github.com/ckrzento/usedby-ai-adoption-sample/blob/main/source-checks.json).
+The latest maintenance run rechecked 500 published relationships, retained 499 and replaced 1. Direct reads were compared with previously reviewed evidence. The [review log](https://github.com/ckrzento/usedby-ai-adoption-sample/blob/main/source-checks.json) records exceptions, alternate publisher pages and decisions.
 
 ## Interpretation
 
