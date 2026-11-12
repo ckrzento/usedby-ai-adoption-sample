@@ -216,17 +216,17 @@
   "population": "First 100 public API rows for each fixed inventory tool",
   "rows_read": 4588,
   "eligible_unique_pairs": 2611,
-  "sample_rows": 500,
+  "sample_rows": 449,
   "requested_maximum": 500,
   "excluded": {
     "not_confirmed": 1977
   },
   "deduplication": "Exact tool_slug/company_slug pair; conflicting pairs or claim IDs fail",
-  "selection": "Round-robin by tool; non-stale first, then newest proof check, then company slug",
+  "selection": "Round-robin by tool; non-stale first, then newest proof check, then company slug; then exclude unsupported rows following source review, without backfill",
   "selection_bias": "Category-balanced catalog subset; public evidence only; first-page proof-strength ordering; CONFIRMED with public source and check date only. Not representative of adoption or market share.",
   "freshness": "Per-row checked/verified/captured dates; collected_at is retrieval, not verification. No global transactional snapshot.",
   "license": "CC-BY-4.0",
-  "data_sha256": "684def94f0da732f1a9d1c93da09175f4328338086f2a8e10b6ae198a4e405d2",
+  "data_sha256": "b1bf823536b0a1f3644cf78de7ba542c6001acfab362407aefe472cbcd42bfe8",
   "receipts": [
     {
       "tool_slug": "abnormal-ai",
@@ -1620,5 +1620,13 @@
         "not_confirmed": 15
       }
     }
-  ]
+  ],
+  "source_review": {
+    "review_date": "2026-11-12",
+    "reviewed_rows": 500,
+    "distinct_urls": 472,
+    "retained": 449,
+    "excluded": 51,
+    "input_sha256": "684def94f0da732f1a9d1c93da09175f4328338086f2a8e10b6ae198a4e405d2"
+  }
 }

@@ -1,35 +1,5018 @@
 {
-  "scope": "Historical source checks from the first release. The exporter excludes the Weaviate URL while it redirects to a generic homepage.",
+  "review_date": "2026-11-12",
+  "input_sha256": "684def94f0da732f1a9d1c93da09175f4328338086f2a8e10b6ae198a4e405d2",
+  "reviewed_rows": 500,
+  "distinct_urls": 472,
+  "retained": 449,
+  "excluded": 51,
+  "scope": "Row-level review of cited sources for documented organizational use. Indexed publisher pages were consulted where direct retrieval failed. Counts refer to this release.",
   "checks": [
     {
-      "claim_id": "cmux8voev0063t31oznwsn1iv",
-      "company": "Weaviate",
-      "source_url": "https://www.patronus.ai/case-studies/weaviate-leverages-patronus-percival-to-accelerate-complex-ai-agent-development",
-      "checked_at": "2026-11-12T12:04:42.141088+00:00",
-      "status": 200,
-      "final_url": "https://www.patronus.ai/",
-      "company_name_in_html": false,
-      "check_scope": "HTTP availability and literal company name in HTML; not semantic evidence verification"
+      "claim_id": "cmuyfbnyz008esg4cl7sk2wju",
+      "company": "ADT",
+      "tool": "Abnormal AI",
+      "source_url": "https://abnormal.ai/customers/love",
+      "decision": "exclude",
+      "reason": "Commentary, recommendation or tutorial without demonstrated use",
+      "retrieval": "direct",
+      "http_status": 200
     },
     {
-      "claim_id": "cmuyfbpg9008msg4ctxd4mfep",
-      "company": "TaylorMade",
-      "source_url": "https://abnormal.ai/customers/love",
-      "checked_at": "2026-11-12T12:04:42.141680+00:00",
-      "status": 200,
-      "final_url": "https://abnormal.ai/customers/love",
-      "company_name_in_html": true,
-      "check_scope": "HTTP availability and literal company name in HTML; not semantic evidence verification"
+      "claim_id": "cmups9og300i1suxvtrf2tpep",
+      "company": "Akron Children's",
+      "tool": "Abridge",
+      "source_url": "https://www.abridge.com/case-study/akron-childrens",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmk90yuub002cnhms4cn57ifg",
+      "company": "IBM",
+      "tool": "Adobe Firefly",
+      "source_url": "https://www.ibm.com/think/news/ai-creative-tools-are-ready-businesses-arent",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuykge6y00jlpq4cwvx54mvp",
+      "company": "5th Line",
+      "tool": "Amplemarket",
+      "source_url": "https://www.amplemarket.com/customers/5th-line",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzwx0ho00wx20xvrgf9erq0",
+      "company": "Granola",
+      "tool": "Attio",
+      "source_url": "https://attio.com/customers/granola",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwo6vmd004lpr1oniht0nv2",
+      "company": "DXC",
+      "tool": "Augment Code",
+      "source_url": "https://www.augmentcode.com/customers/DXC-technology-redefining-software-delivery",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvwg5u3007nsp1oob9xf73d",
+      "company": "EliseAI",
+      "tool": "Baseten",
+      "source_url": "https://www.baseten.co/resources/customers/how-eliseai-trains-specialized-models/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuypzkzr00yepk4cx4o9xvqy",
+      "company": "Arch Capital",
+      "tool": "Beamery",
+      "source_url": "https://beamery.com/resources/case-studies/customer-spotlight-brandon-jones-arch-capital",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusa7kv0002cpp1o23os7rzx",
+      "company": "Adweek",
+      "tool": "Beautiful.ai",
+      "source_url": "https://www.beautiful.ai/customers/adweek",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwotjr400lupr1ov3z5dcnl",
+      "company": "Box",
+      "tool": "Braintrust",
+      "source_url": "https://www.braintrust.dev/customers/box",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_3de20c2cbaff592fa2caaece",
+      "company": "Edison Township Public Schools",
+      "tool": "Brisk Teaching",
+      "source_url": "https://www.briskteaching.com/success-stories/edison-township-public-schools",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz0du2o01p9py1oqrj0sa09",
+      "company": "Baker Hughes",
+      "tool": "C3 AI",
+      "source_url": "https://c3.ai/customers/baker-hughes-achieves-bottom-line-savings-with-ai-sourcing-optimization",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmk90yflr000anhmsw9m98ako",
+      "company": "eXp Realty",
+      "tool": "Canva",
+      "source_url": "https://www.canva.com/case-studies/exp-realty/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuywpaxz01r3pj4ckvc2aeq9",
+      "company": "11X",
+      "tool": "Cartesia",
+      "source_url": "https://www.cartesia.ai/customers/11x",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyuhwoy00bipj4cpwc94oqm",
+      "company": "Cosentino",
+      "tool": "Celonis",
+      "source_url": "https://www.celonis.com/solutions/stories/cosentino-order-management",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzggc8c00rn569kaflxnkkp",
+      "company": "Intercom",
+      "tool": "Claude",
+      "source_url": "https://www.intercom.com/blog/fin-2-powered-by-anthropic-claude-llm",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuri3rik00d2st1ooemb1d6v",
+      "company": "A-LIGN",
+      "tool": "Clay",
+      "source_url": "https://www.clay.com/customers/a-lign",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwoel6z00a4pr1ol2958q3e",
+      "company": "Abnormal",
+      "tool": "CodeRabbit",
+      "source_url": "https://www.coderabbit.ai/case-studies/how-abnormal-ai-scales-autonomous-development-with-coderabbit",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz17y4o01y1py1om3azlqa9",
+      "company": "Aarbakke",
+      "tool": "Cognite",
+      "source_url": "https://www.cognite.com/en/customers/aarbakke",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvwpsby9000xsx0d8k5be9vh",
+      "company": "Ada",
+      "tool": "Cohere",
+      "source_url": "https://cohere.com/customer-stories/ada",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyiacxd01ynsg4cftywnlmo",
+      "company": "Ancestry",
+      "tool": "Comet Opik",
+      "source_url": "https://www.comet.com/site/customers/ancestry/",
+      "decision": "exclude",
+      "reason": "Evidence for the Comet platform without evidence of Opik use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyjzw6x0093pq4crhlo0c1r",
+      "company": "AJ Bell",
+      "tool": "ComplyAdvantage",
+      "source_url": "https://complyadvantage.com/customer-stories/aj-bell-reduces-alert-volumes-by-82-percent/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrwljh00odu11oip6g992h",
+      "company": "Acuity Brands",
+      "tool": "Coveo",
+      "source_url": "https://www.coveo.com/en/resources/case-studies/acuity-brands",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyjhvqy009kpd1oi9p5xgmu",
+      "company": "Axos Bank",
+      "tool": "Cyberhaven",
+      "source_url": "https://www.cyberhaven.com/customers/axos-bank",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyff1zl00dbsg4ccqn7oybf",
+      "company": "ACV Auctions",
+      "tool": "Cyera",
+      "source_url": "https://www.cyera.com/customer-story/how-acv-auctions-uses-cyera-to-control-sensitive-cloud-data-exposure",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyqet7q01f4sg1otmfx6r7v",
+      "company": "Aramark",
+      "tool": "DeepL",
+      "source_url": "https://www.deepl.com/en/customer-stories/aramark-and-avendra-international",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkib0ov6000ww5mswbn9ut24",
+      "company": "100ms",
+      "tool": "DevRev",
+      "source_url": "https://devrev.ai/customers/100ms",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "indexed publisher page",
+      "http_status": 429
+    },
+    {
+      "claim_id": "cmuyut9sr00mfpj4cbkex5r4i",
+      "company": "Austin FC",
+      "tool": "Dialpad",
+      "source_url": "https://www.dialpad.com/customers/austinfc/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyk63ny00slpd1ot1oxx96z",
+      "company": "Brex",
+      "tool": "Drata",
+      "source_url": "https://drata.com/customers/brex-tprm",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur2vqwo0146t61o0cnsi2dz",
+      "company": "Alma",
+      "tool": "Dust",
+      "source_url": "https://dust.tt/customers/alma-scaled-ai-personal-productivity-to-company-infrastructure",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwoj0do009vsc1o6rs9mnvf",
+      "company": "Arena (LMArena)",
+      "tool": "E2B",
+      "source_url": "https://e2b.dev/customers/how-hugging-face-is-using-e2b-to-replicate-deepseek-r1",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "2423a9f2-720e-4ed7-a3e1-b239dc3b91ab",
+      "company": "Harvey",
+      "tool": "ElevenLabs",
+      "source_url": "https://www.harvey.ai/blog/how-harvey-is-building-a-frontier-marketing-org",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwd5qghb007iuh4eai85fybv",
+      "company": "11X",
+      "tool": "Exa",
+      "source_url": "https://exa.ai/customers/11x",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyoopyk00iqsg1os5k53lbj",
+      "company": "Briq",
+      "tool": "Fellow",
+      "source_url": "https://fellow.ai/customers/briq",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuv8gz1h00e0sn1ogl9gr8fy",
+      "company": "Adyen",
+      "tool": "Figma",
+      "source_url": "https://www.figma.com/customers/how-adyen-is-rebuilding-design/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_1e07d103c9b04cf46afa35d1",
+      "company": "Accu Limited",
+      "tool": "Fireflies",
+      "source_url": "https://fireflies.ai/blog/accu-limited-receives-complete-details-on-missed-meetings",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuykl9oc014xpd1o1s3szpzd",
+      "company": "a.k.a. Brands",
+      "tool": "FloQast",
+      "source_url": "https://www.floqast.com/stories/how-floqast-compliance-management-is-helping-a-k-a-brands-build-a-robust-compliance-function",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkib6zju001fiemsenvu8uaw",
+      "company": "Embryo Digital",
+      "tool": "Frase",
+      "source_url": "https://www.frase.io/case-studies/embryo-digital-seo-agency",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "13e98497-1936-4416-bbc3-3529858e85f4",
+      "company": "Fivetran",
+      "tool": "Gemini",
+      "source_url": "https://www.fivetran.com/blog/understanding-gemini-costs-and-performance-vs-gpt-and-claude-ai-columns",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkibtwm800hvfjmszpct65lo",
+      "company": "Booking.com",
+      "tool": "Glean",
+      "source_url": "https://www.glean.com/resources/customer-stories/booking-com",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkcw9x1i001k04laboc365au",
+      "company": "Anthropic",
+      "tool": "Gong",
+      "source_url": "https://www.gong.io/customers/case-studies/anthropics-64-productivity-gain-combining-revenue-ai-with-a-customer-centric-gtm-strategy",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_53f3c20338e759168db77326",
+      "company": "Evolution Risk Partners",
+      "tool": "Gradient AI",
+      "source_url": "https://www.gradientai.com/press-evolution-risk-partners-boosts-risk-projection-capabilities-with-gradient-ai/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuygja5r010hsg4cecvjv3jl",
+      "company": "Acordo Certo",
+      "tool": "H2O.ai",
+      "source_url": "https://h2o.ai/case-studies/acordo-certo-h2o",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyihyf901zrsg4ca0cox23j",
+      "company": "Ancestry",
+      "tool": "Harness",
+      "source_url": "https://www.harness.io/case-studies/ancestry-consistency-governance-downtime-systems-onboarding-cicd",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwon84w00h3pr1osivdoq90",
+      "company": "Algolia",
+      "tool": "Hex",
+      "source_url": "https://hex.tech/customers/algolia/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy302n000tqsh1ojjbrjkul",
+      "company": "Anaconda",
+      "tool": "Hightouch",
+      "source_url": "https://hightouch.com/customers/anaconda",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_bd7e39c65647bba8970acdea",
+      "company": "Airiam",
+      "tool": "Horizon3.ai NodeZero",
+      "source_url": "https://horizon3.ai/customer-story/airiam-turning-cyber-resilience-into-a-superpower/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkibxzom00l7fjmskg56cck9",
+      "company": "Angel City FC",
+      "tool": "HubSpot",
+      "source_url": "https://www.hubspot.com/case-studies/angel-city",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuylh1lg01lxpd1osx0pjfei",
+      "company": "Accurx",
+      "tool": "incident.io",
+      "source_url": "https://incident.io/customers/netflix",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuv0vl6z00kxui1oxgqnjokp",
+      "company": "3Commas",
+      "tool": "Intercom",
+      "source_url": "https://www.intercom.com/customers/3commas",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzvhpf5000955xvdblimbt6",
+      "company": "Akbank",
+      "tool": "Jasper",
+      "source_url": "https://www.jasper.ai/case-studies/akbank",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuuavs10009jsz1omwy8f5a9",
+      "company": "1Berkshire",
+      "tool": "Jotform",
+      "source_url": "https://www.jotform.com/customer-stories/1berkshire/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuva7dbr000psx1ojemrx087",
+      "company": "Accor",
+      "tool": "Legora",
+      "source_url": "https://legora.com/customers/accor",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyvl5hx00sqpj1osqm70o4x",
+      "company": "Allied Universal",
+      "tool": "Loopio",
+      "source_url": "https://loopio.com/case-study/how-loopio-helps-allied-universal-respond-to-rfps/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "indexed publisher page",
+      "http_status": null
+    },
+    {
+      "claim_id": "cmuyw975h0169pj1obzxv9bhf",
+      "company": "Eden Prairie Schools",
+      "tool": "MagicSchool",
+      "source_url": "https://www.magicschool.ai/case-studies/eden-prairie-schools",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvwbbmg006cpk1ojuwhp3xj",
+      "company": "Fiskaly",
+      "tool": "Make",
+      "source_url": "https://www.make.com/success-stories/how-stellantis-scaled-an-ai-voice-agent-with-make",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy3zjqh00h2t14c69m0iw67",
+      "company": "Alexander Hughes",
+      "tool": "Metaview",
+      "source_url": "https://www.metaview.ai/customers/wall-of-love",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyzsrgy01clpy1oj47ien4s",
+      "company": "Aurigo Software Technologies",
+      "tool": "Mindtickle",
+      "source_url": "https://www.mindtickle.com/customer-stories/aurigo-leveraged-mindtickle-for-structured-sales-enablement-and-onboarding-of-their-gtm-team/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuridjh400jjst1ohdvpr4kz",
+      "company": "Airbus",
+      "tool": "Mistral",
+      "source_url": "https://mistral.ai/customers/airbus/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyvpk63011ppj4czpsmw9tl",
+      "company": "Accor",
+      "tool": "Movable Ink",
+      "source_url": "https://movableink.com/case-studies/clicks-climb-135-as-accor-personalizes-the-traveler-experience",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzx2wzx017820xvn2ish2zh",
+      "company": "AkzoNobel",
+      "tool": "Moveworks",
+      "source_url": "https://www.moveworks.com/us/en/customers/25k-akzonobel-employees-are-leveraging-moveworks",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
     },
     {
       "claim_id": "cmuygpt5p0165sg4coy05w81w",
       "company": "Antioch",
+      "tool": "Nebius AI Cloud",
       "source_url": "https://nebius.com/customer-stories/antioch",
-      "checked_at": "2026-11-12T12:04:42.141766+00:00",
-      "status": 200,
-      "final_url": "https://nebius.com/customer-stories/antioch",
-      "company_name_in_html": true,
-      "check_scope": "HTTP availability and literal company name in HTML; not semantic evidence verification"
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyuyk4u00i1pj1oe0wuqhr6",
+      "company": "Antolin",
+      "tool": "Neural Concept",
+      "source_url": "https://www.neuralconcept.com/customer-stories/antolin-neural-concept-automotive-interior",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200,
+      "resolved_url": "https://www.neuralconcept.com/industry-stories/antolin-neural-concept-automotive-interior"
+    },
+    {
+      "claim_id": "cmuz2v48t00ogsh1okbsfs16c",
+      "company": "Augusta Health",
+      "tool": "Notable",
+      "source_url": "https://www.notablehealth.com/customer-stories/transforming-patient-and-staff-engagement",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvilsq9s000zq20c62lv13vs",
+      "company": "2UP",
+      "tool": "Optimove",
+      "source_url": "https://www.optimove.com/resources/case-studies/2up",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyw6kbf013tpj1opkir6qck",
+      "company": "Boehringer Ingelheim",
+      "tool": "Owkin",
+      "source_url": "https://www.owkin.com/newsfeed/owkin-to-license-k-pro-ai-scientist-and-multimodal-oncology-and-immunology-data-to-boehringer-ingelheim",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz3v19o011csh1oc28rbqh4",
+      "company": "Labcorp",
+      "tool": "PathAI",
+      "source_url": "https://www.pathai.com/news/labcorp-expands-collaboration-with-pathai-to-deploy-fda-cleared-digital-pathology-platform-nationwide",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuts00g200n2pv1o2ncp0tdu",
+      "company": "AlixPartners",
+      "tool": "Perplexity",
+      "source_url": "https://www.perplexity.ai/hub/customers/alix-partners",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_b133b32c2d0c7204a76caa28",
+      "company": "Carrefour",
+      "tool": "Persado",
+      "source_url": "https://www.persado.com/articles/how-motivation-ai-generated-language-helps-carrefour-engage-customers",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrmh9a00i8pv1ocdzn805e",
+      "company": "Ameliora",
+      "tool": "Photoroom",
+      "source_url": "https://www.photoroom.com/customer-stories/ameliora",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy4yj77011nt14czffsyuxl",
+      "company": "Alnylam Pharmaceuticals",
+      "tool": "Prezent",
+      "source_url": "https://www.prezent.ai/case-studies/how-prezent-alleviates-anxiety-and-stress-for-teams-at-alnylam-pharmaceuticals",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyyrgcq011tpe4ctn7idq2j",
+      "company": "1840 & Company",
+      "tool": "Profound",
+      "source_url": "https://www.tryprofound.com/customers/1840-co-answer-engine-optimization-case-study",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy3m90q002esg4cjhnxp24v",
+      "company": "Autotrader",
+      "tool": "QA Wolf",
+      "source_url": "https://www.qawolf.com/customers/autotrader",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyot4c90062pk4ch916vz9r",
+      "company": "ABB Optical",
+      "tool": "Ramp",
+      "source_url": "https://ramp.com/customers/abboptical",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuywkg3j001zpe4c1p4f6jfq",
+      "company": "a360inc",
+      "tool": "Regal",
+      "source_url": "https://www.regal.ai/case-study/a360",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "11a437cf-87d5-4446-968f-d33f64a8be96",
+      "company": "AllFly",
+      "tool": "Replit",
+      "source_url": "https://replit.com/customers/allfly",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvb4s5i00mpsx1ohrcv2dxa",
+      "company": "AccioJob",
+      "tool": "Retell AI",
+      "source_url": "https://www.retellai.com/case-study/how-acciojob-saw-a-70-reduction-in-false-positive-assessments-with-retell-ai",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur2n45q00sdt61oogd305b1",
+      "company": "Avo",
+      "tool": "Retool",
+      "source_url": "https://retool.com/customers/avo",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyt8qjj00p1pc4cmczhaj59",
+      "company": "Adyen",
+      "tool": "Rossum",
+      "source_url": "https://rossum.ai/customer-stories/adyen/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuuan1cm0022ss1olfiyp2hn",
+      "company": "Compare Club",
+      "tool": "Scribe",
+      "source_url": "https://scribe.com/customers/compare-club",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyyhxef00l7py1ornz3qv0x",
+      "company": "Akamai",
+      "tool": "Scrunch",
+      "source_url": "https://scrunch.com/case-studies/akamai-5x-brand-presence-in-ai-search-results",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvw4kaa003ppk1ojgt0oqls",
+      "company": "10x Banking",
+      "tool": "SentinelOne",
+      "source_url": "https://www.sentinelone.com/customers/10xbanking/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "indexed publisher page",
+      "http_status": 429
+    },
+    {
+      "claim_id": "cmuubar2i00mzsz1obtnaued1",
+      "company": "Adobe",
+      "tool": "ServiceNow",
+      "source_url": "https://www.servicenow.com/customers/fedex.html",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmupt7hjj00an4rxvhtjrec3q",
+      "company": "ADT",
+      "tool": "Sierra",
+      "source_url": "https://sierra.ai/customers/adt",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyj2nqa002upd1o7u0ypzy6",
+      "company": "Auth0",
+      "tool": "Snyk",
+      "source_url": "https://snyk.io/case-studies/auth0/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_2e9bfc820c41447f72f2efaf",
+      "company": "1Password",
+      "tool": "Sourcegraph",
+      "source_url": "https://sourcegraph.com/case-studies/1password-increases-productivity-in-a-distributed-codebase",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwd5orh2005nuh4e4eqhkwhs",
+      "company": "Airbyte",
+      "tool": "Speakeasy",
+      "source_url": "https://www.speakeasy.com/customers/airbyte",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuynm18u02dwpd1o84ndmcog",
+      "company": "Abnormal",
+      "tool": "SpotDraft",
+      "source_url": "https://www.spotdraft.com/customer-stories/abnormal-security",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_5e57a437d489e3ce80fa794c",
+      "company": "Access Health Louisiana",
+      "tool": "Suki",
+      "source_url": "https://www.suki.ai/press-releases/sukis-voice-ai-assistant-transforms-healthcare-in-underserved-populations/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur19oha000ht61olb1pyopd",
+      "company": "Carlsberg",
+      "tool": "Synthesia",
+      "source_url": "https://www.synthesia.io/case-studies/merck-kgaa",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutr85wf004tpv1o7i8ft83q",
+      "company": "Canon",
+      "tool": "Talkdesk",
+      "source_url": "https://www.talkdesk.com/customers/canon/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyrs2k60033sp4cphccm1ds",
+      "company": "Duolingo",
+      "tool": "Textio",
+      "source_url": "https://textio.com/resources/case-studies/duolingo",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusuna6j007usx1oftb3t6rh",
+      "company": "ADT Security",
+      "tool": "Tidio",
+      "source_url": "https://www.tidio.com/customers/adt-security/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz1hpl300d7r94cgzsa2k7w",
+      "company": "Aviva",
+      "tool": "Tractable",
+      "source_url": "https://tractable.ai/case-studies/aviva-testimonial/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuynadk6029bpd1oj2gdfnl4",
+      "company": "Bakkt",
+      "tool": "Unit21",
+      "source_url": "https://www.unit21.ai/customers/bakkt",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy2k1so00p4pp1ononw5grm",
+      "company": "Accumulus Technologies",
+      "tool": "Vanta",
+      "source_url": "https://www.vanta.com/customers/accumulus-technologies",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusb3ojh00poqt1o4xdgm6ar",
+      "company": "Aleph Alpha",
+      "tool": "Weights & Biases",
+      "source_url": "https://wandb.ai/site/customers/aleph-alpha/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy4o8i100j3sg4c24tujlgt",
+      "company": "Clay",
+      "tool": "Wispr Flow",
+      "source_url": "https://wisprflow.ai/case-study/clay",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrch1d00awpv1ora0mgy58",
+      "company": "ActiveCampaign",
+      "tool": "Zapier",
+      "source_url": "https://zapier.com/customer-stories/activecampaign",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuys1vk4009dsp4cjw5l3vab",
+      "company": "ADT",
+      "tool": "Zip",
+      "source_url": "https://zip.com/customers/adt",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyfc4yn0091sg4c4vm8yvvt",
+      "company": "Avery Dennison",
+      "tool": "Abnormal AI",
+      "source_url": "https://abnormal.ai/customers/love",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmupsbo4m00kzsuxv6wz6mcu0",
+      "company": "Cambridge Health Alliance",
+      "tool": "Abridge",
+      "source_url": "https://www.abridge.com/press-release/cambridge-health-alliance-announcement",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_5f78c219b51a149f27bcbdf3",
+      "company": "Amazon",
+      "tool": "Adobe Firefly",
+      "source_url": "https://business.adobe.com/uk/blog/how-kinesso-helped-amazon-fresh-cut-production-time-using-adobe-firefly",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuykh5ax00lqpq4cyjwks3vz",
+      "company": "Agilyx",
+      "tool": "Amplemarket",
+      "source_url": "https://www.amplemarket.com/customers/agilyx",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzwx10100wz20xvp63kenb0",
+      "company": "Modal",
+      "tool": "Attio",
+      "source_url": "https://attio.com/customers/modal",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwo7kvk005fpr1oblm5kr9z",
+      "company": "Garner Health",
+      "tool": "Augment Code",
+      "source_url": "https://www.augmentcode.com/customers/garner-health-augment-code",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvwg6hm007qsp1okfyxg4sw",
+      "company": "Gamma",
+      "tool": "Baseten",
+      "source_url": "https://www.baseten.co/resources/customers/how-gamma-makes-building-presentations-criminally-fun/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuypze4r00xepk4cpucl9plr",
+      "company": "Assurant",
+      "tool": "Beamery",
+      "source_url": "https://beamery.com/resources/case-studies/talent-insights-from-assurant-2025-beamie-award-winner-for-hr-transformation-impact",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusa7grw0020pp1owqzvw90f",
+      "company": "Camelot",
+      "tool": "Beautiful.ai",
+      "source_url": "https://www.beautiful.ai/customers/camelot",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwou55800mkpr1oksr43deh",
+      "company": "Browserbase",
+      "tool": "Braintrust",
+      "source_url": "https://www.braintrust.dev/customers/browserbase",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_69d835c2f27e030def3ba8cf",
+      "company": "Hauppauge Public Schools",
+      "tool": "Brisk Teaching",
+      "source_url": "https://www.briskteaching.com/success-stories/how-hauppauge-public-schools-elevated-teaching-and-learning-with-brisk",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz0dssx01p2py1o09gqega5",
+      "company": "Con Edison",
+      "tool": "C3 AI",
+      "source_url": "https://c3.ai/customers/conedison",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200,
+      "resolved_url": "https://c3.ai/customers"
+    },
+    {
+      "claim_id": "cmv2crg6k0098s64c2z924uwv",
+      "company": "Keller Williams",
+      "tool": "Canva",
+      "source_url": "https://www.canva.com/case-studies/keller-williams/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuywozyv01pmpj4c12zlt0s9",
+      "company": "2X Solutions",
+      "tool": "Cartesia",
+      "source_url": "https://www.cartesia.ai/customers/2x-solutions",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyuhudv00b9pj4ckg337lvy",
+      "company": "Deutsche Bank",
+      "tool": "Celonis",
+      "source_url": "https://www.celonis.com/solutions/stories/deutsche-bank-customer-onboarding",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur1awlh002mta1o76kik9xr",
+      "company": "Atlassian",
+      "tool": "Claude",
+      "source_url": "https://claude.com/customers/atlassian",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwbqvqxh00brud4emwxml396",
+      "company": "AirOps",
+      "tool": "Clay",
+      "source_url": "https://www.clay.com/customers/airops",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwofasu00axpr1okl8zxgny",
+      "company": "Briya",
+      "tool": "CodeRabbit",
+      "source_url": "https://www.coderabbit.ai/case-studies/how-briya-uses-coderabbit-to-govern-every-ai-coding-agent",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz17ah601wtpy1oksw91os6",
+      "company": "Aker BP",
+      "tool": "Cognite",
+      "source_url": "https://www.cognite.com/en/customers/aker-bp",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "bdb1cb74-4e3b-4358-b8f8-1eb6557ed76d",
+      "company": "Atomicwork",
+      "tool": "Cohere",
+      "source_url": "https://cohere.com/customer-stories/atomicwork",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyi9q9601xhsg4c7f3m0xki",
+      "company": "AssemblyAI",
+      "tool": "Comet Opik",
+      "source_url": "https://www.comet.com/site/customers/assemblyai/",
+      "decision": "exclude",
+      "reason": "Evidence for the Comet platform without evidence of Opik use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyjzyd0009apq4ccvgcw2sj",
+      "company": "AUSIEX",
+      "tool": "ComplyAdvantage",
+      "source_url": "https://complyadvantage.com/customer-stories/ausiex-shows-that-seamless-onboarding-and-strong-compliance-go-hand-in-hand/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrx47p00plu11o4aho9e7u",
+      "company": "athenahealth",
+      "tool": "Coveo",
+      "source_url": "https://www.coveo.com/en/resources/case-studies/athenahealth-improves-agent-experience",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyjhwz2009opd1oo37spoxa",
+      "company": "BioIVT",
+      "tool": "Cyberhaven",
+      "source_url": "https://www.cyberhaven.com/customers/bio-ivt",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyff0zb00d7sg4c5xbqsguj",
+      "company": "Cass Information Systems",
+      "tool": "Cyera",
+      "source_url": "https://www.cyera.com/customer-story/empowering-data-security-at-cass-information-systems",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyqelur01easg1ohzgzkjvl",
+      "company": "Cybozu",
+      "tool": "DeepL",
+      "source_url": "https://www.deepl.com/en/customer-stories/cybozu",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkib0iee0004w5msl7fwm8rv",
+      "company": "ActionIQ",
+      "tool": "DevRev",
+      "source_url": "https://devrev.ai/customers/actioniq",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "indexed publisher page",
+      "http_status": 429
+    },
+    {
+      "claim_id": "cmuyuta8u00mipj4c51dcvxvn",
+      "company": "Beacon Mobility",
+      "tool": "Dialpad",
+      "source_url": "https://www.dialpad.com/customers/beacon-mobility/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyk6erb00tppd1owjwh8ljg",
+      "company": "Connective Broker Services",
+      "tool": "Drata",
+      "source_url": "https://drata.com/customers/connective",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur2vk8r013it61o9mp1meti",
+      "company": "Apiday",
+      "tool": "Dust",
+      "source_url": "https://dust.tt/customers/how-apiday-cut-prospect-enrichment-from-7-days-to-2-hours-with-dust-and-and-idoption",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwcgibxw008pvp4ezhkni6qb",
+      "company": "Artificial Analysis",
+      "tool": "E2B",
+      "source_url": "https://e2b.dev/customers/artificial-analysis",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur1chqv0039ta1o9kngjr9z",
+      "company": "KPN",
+      "tool": "ElevenLabs",
+      "source_url": "https://elevenlabs.io/blog/kpn",
+      "decision": "exclude",
+      "reason": "Announced deployment without demonstrated use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwd5qidw007puh4e6uwqtfuf",
+      "company": "Anara",
+      "tool": "Exa",
+      "source_url": "https://exa.ai/customers/anara",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyoo1xv00hksg1ozm5kwinb",
+      "company": "Dynatrace",
+      "tool": "Fellow",
+      "source_url": "https://fellow.ai/customers/dynatrace",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuv8h55300ensn1om4j0uxgd",
+      "company": "Botim",
+      "tool": "Figma",
+      "source_url": "https://www.figma.com/customers/botim-ai-ready-design/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_ef46ce7c43d60f040f123551",
+      "company": "AdCommunal",
+      "tool": "Fireflies",
+      "source_url": "https://fireflies.ai/blog/aanicca-uses-fireflies-for-client-meetings",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuykli2s015ppd1onxgtlj8q",
+      "company": "Aqua Security",
+      "tool": "FloQast",
+      "source_url": "https://www.floqast.com/stories/floqast-offers-israel-based-aqua-security-the-visibility-and-versatility-to-scale",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkib6wx70015iemsflusf0u1",
+      "company": "Opinion Stage",
+      "tool": "Frase",
+      "source_url": "https://www.frase.io/case-studies/opinion-stage-seo-confidence",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_99320463efd98517f3cd791a",
+      "company": "Agoda",
+      "tool": "Gemini",
+      "source_url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzgavv600gy569ktja43okh",
+      "company": "Confluent",
+      "tool": "Glean",
+      "source_url": "https://www.glean.com/resources/customer-stories/confluent",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzwi7av006220xv715yelzf",
+      "company": "Google",
+      "tool": "Gong",
+      "source_url": "https://www.gong.io/customers/case-studies/how-a-google-sales-team-got-hours-of-its-time-back-using-gong",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_f3c2048456151215ed5efffb",
+      "company": "The Provant Group",
+      "tool": "Gradient AI",
+      "source_url": "https://www.gradientai.com/gradient-ais-sail-solution-gives-the-provant-group-greater-insights-into-group-health-risks/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuygjlfh012jsg4chumblgkg",
+      "company": "ADP",
+      "tool": "H2O.ai",
+      "source_url": "https://h2o.ai/case-studies/adp-h2o",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyijaqu023msg4cp35lfj3a",
+      "company": "Burst SMS",
+      "tool": "Harness",
+      "source_url": "https://www.harness.io/case-studies/burst-sms-accelerates-application-modernization-with-harness",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwooa0t00i3pr1owsirqawv",
+      "company": "AllTrails",
+      "tool": "Hex",
+      "source_url": "https://hex.tech/customers/alltrails/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy2yqhq00s0sh1ob8cyhv2a",
+      "company": "Asana",
+      "tool": "Hightouch",
+      "source_url": "https://hightouch.com/customers/asana",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_2703edc44a343ca058b3767f",
+      "company": "F12.net",
+      "tool": "Horizon3.ai NodeZero",
+      "source_url": "https://horizon3.ai/customer-story/revolutionizing-cybersecurity-f12-nets-journey-with-autonomous-penetration-testing/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusa8l47004pqt1o8fevjmvu",
+      "company": "Casio",
+      "tool": "HubSpot",
+      "source_url": "https://www.hubspot.com/case-studies/casio",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuylgohs01kmpd1oho9am2c4",
+      "company": "AudioStack",
+      "tool": "incident.io",
+      "source_url": "https://incident.io/customers/audiostack",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuv0vvbj00lqui1ovhlokeng",
+      "company": "AgriWebb",
+      "tool": "Intercom",
+      "source_url": "https://www.intercom.com/customers/agriwebb",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuqtthm2001gsk1ox2j2p95o",
+      "company": "BMC Software",
+      "tool": "Jasper",
+      "source_url": "https://www.jasper.ai/case-studies/cushman-wakefield",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuuawbjt00bmsz1oyutimzdq",
+      "company": "Aish Detroit",
+      "tool": "Jotform",
+      "source_url": "https://www.jotform.com/customer-stories/aish-detroit/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuva7mah001fsx1otiswzw3e",
+      "company": "Al Tamimi & Company",
+      "tool": "Legora",
+      "source_url": "https://legora.com/customers/ai-tamimi",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyvloas00tcpj1of3y94m6r",
+      "company": "Aspen Medical",
+      "tool": "Loopio",
+      "source_url": "https://loopio.com/case-study/aspen-medical-proactive-proposals-loopio/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "indexed publisher page",
+      "http_status": null
+    },
+    {
+      "claim_id": "cmuyw98en016dpj1o5vdcuh3x",
+      "company": "Midway Independent School District",
+      "tool": "MagicSchool",
+      "source_url": "https://www.magicschool.ai/case-studies/midway-isd",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvwba660068pk1our9od508",
+      "company": "iFood",
+      "tool": "Make",
+      "source_url": "https://www.make.com/success-stories/how-stellantis-scaled-an-ai-voice-agent-with-make",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy3zib500gut14car3xh6ox",
+      "company": "American Veterinary Group",
+      "tool": "Metaview",
+      "source_url": "https://www.metaview.ai/customers/wall-of-love",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyzsmea01brpy1ot2ts054e",
+      "company": "CentiMark",
+      "tool": "Mindtickle",
+      "source_url": "https://www.mindtickle.com/customer-stories/centimark-cuts-ramp-time-to-8-days-and-scales-enablement-with-mindtickle/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuridkyw00jnst1okw5n2d8a",
+      "company": "Ardian",
+      "tool": "Mistral",
+      "source_url": "https://mistral.ai/customers/ardian/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyvq38x013zpj4cvcv9qpo5",
+      "company": "Amazon Music",
+      "tool": "Movable Ink",
+      "source_url": "https://movableink.com/case-studies/amazon-musics-move-to-real-time-relevance",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvac6lx00appr1owl0lgblk",
+      "company": "Albemarle",
+      "tool": "Moveworks",
+      "source_url": "https://www.moveworks.com/us/en/customers/albemarle-doubles-productivity-with-moveworks-employee-experience-insights",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuygpxj6016xsg4cqr10jioa",
+      "company": "Compugen",
+      "tool": "Nebius AI Cloud",
+      "source_url": "https://nebius.com/customer-stories/compugen",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyuy3ex00gxpj1ozutpy4hc",
+      "company": "General Motors",
+      "tool": "Neural Concept",
+      "source_url": "https://www.neuralconcept.com/customer-stories/general-motors-pedestrian-safety",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200,
+      "resolved_url": "https://www.neuralconcept.com/industry-stories/general-motors-pedestrian-safety"
+    },
+    {
+      "claim_id": "cmuz2uuyg00ncsh1ogfz6jtro",
+      "company": "Austin Regional Clinic",
+      "tool": "Notable",
+      "source_url": "https://www.notablehealth.com/customer-stories/austin-regional-clinic-automates-clinical-documentation-with-notable",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyz7fi4012npy1o4fjvicgr",
+      "company": "Apuesta Total",
+      "tool": "Optimove",
+      "source_url": "https://www.optimove.com/resources/case-studies/apuesta-total",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyw6kvg013wpj1obj4xsy5p",
+      "company": "Bristol Myers Squibb",
+      "tool": "Owkin",
+      "source_url": "https://www.owkin.com/newsfeed/owkin-announces-multi-year-clinical-data-science-strategic-collaboration-with-bristol-myers-squibb",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz3v0yh0119sh1odz79xosp",
+      "company": "MedStar Health",
+      "tool": "PathAI",
+      "source_url": "https://www.pathai.com/news/pathai-and-medstar-health-announce-partnership-to-deploy-the-aisight-dx-digital-pathology-platform-and-advanced-ai-applications",
+      "decision": "exclude",
+      "reason": "Announced deployment without demonstrated use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvqlywhr002ws437jgxhh4k5",
+      "company": "Apollo.io",
+      "tool": "Perplexity",
+      "source_url": "https://www.perplexity.ai/hub/customers/apollo",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_c6f00960b5a2bde6e91a4dbd",
+      "company": "Marks & Spencer",
+      "tool": "Persado",
+      "source_url": "https://www.persado.com/articles/marks-spencer-leverages-ai-to-drive-hundreds-of-millions-in-revenue-with-personalisation-program",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvwq2dw40057v20du271od9w",
+      "company": "Blazendary",
+      "tool": "Photoroom",
+      "source_url": "https://www.photoroom.com/customer-stories/blazendary",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy4yku40123t14cjcpkgzls",
+      "company": "Alteryx",
+      "tool": "Prezent",
+      "source_url": "https://www.prezent.ai/case-studies/case-study-alteryx",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyyreo6011ppe4ct7nhrg1o",
+      "company": "Airbyte",
+      "tool": "Profound",
+      "source_url": "https://www.tryprofound.com/customers/airbyte",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy3m4d0001msg4c77ncp8s7",
+      "company": "Brilliant",
+      "tool": "QA Wolf",
+      "source_url": "https://www.qawolf.com/customers/brilliant",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvdoe49i006ysf0c5hx7rtys",
+      "company": "Agemark Senior Living",
+      "tool": "Ramp",
+      "source_url": "https://ramp.com/customers/elevenlabs",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuywjzlr000mpe4cgownunsc",
+      "company": "American Standard",
+      "tool": "Regal",
+      "source_url": "https://www.regal.ai/case-study/american-standard-o7kb3",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy1ymsx00afpp1oqkv21qvb",
+      "company": "Bamboo Classroom",
+      "tool": "Replit",
+      "source_url": "https://replit.com/customers/bamboo-classroom",
+      "decision": "exclude",
+      "reason": "The named entity is the application built, rather than the organization using the tool",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvb34a000klsx1ocpxc6r11",
+      "company": "Anker",
+      "tool": "Retell AI",
+      "source_url": "https://www.retellai.com/case-study/how-anker-transformed-global-customer-support-with-human-quality-al-voice",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkbdzp5j000t04l5uzqpr2sy",
+      "company": "Brex",
+      "tool": "Retool",
+      "source_url": "https://retool.com/customers/brex",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyt9xad00r3pc4cy2maoxwn",
+      "company": "allnex",
+      "tool": "Rossum",
+      "source_url": "https://rossum.ai/customer-stories/allnex/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuuamx6e001uss1oga7htnmz",
+      "company": "Coronis Health",
+      "tool": "Scribe",
+      "source_url": "https://scribe.com/customers/coronis",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyyigd900mtpy1oo8nyrktt",
+      "company": "AlchemyLeads",
+      "tool": "Scrunch",
+      "source_url": "https://scrunch.com/case-studies/2026-01-alchemyleads-scrunch-drive-real-value-for-clients-win-enterprise-deals",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvw3043000cpk1oiufrqumy",
+      "company": "Aston Martin",
+      "tool": "SentinelOne",
+      "source_url": "https://www.sentinelone.com/customers/norwegian-airlines/?utm_source=https%3A%2F%2Fwww.sentinelone.com%2F&utm_medium=s1-site-referral",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 429
+    },
+    {
+      "claim_id": "cmuubb2q700nssz1omq8wzpze",
+      "company": "AstraZeneca",
+      "tool": "ServiceNow",
+      "source_url": "https://www.servicenow.com/customers/fedex.html",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmups5vfo00fasuxvt5s8a4xo",
+      "company": "Airtable",
+      "tool": "Sierra",
+      "source_url": "https://sierra.ai/customers/airtable",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyj2o68002xpd1o6s2bwiql",
+      "company": "Coveo",
+      "tool": "Snyk",
+      "source_url": "https://snyk.io/case-studies/coveo/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_ed977b171cc8cad1d551fb13",
+      "company": "Booking.com",
+      "tool": "Sourcegraph",
+      "source_url": "https://sourcegraph.com/blog/announcing-our-partnership-with-dx",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwd5pg76007wuh4ergv27d6p",
+      "company": "Apex Fintech Solutions",
+      "tool": "Speakeasy",
+      "source_url": "https://www.speakeasy.com/customers/apex",
+      "decision": "exclude",
+      "reason": "The user described cannot be reliably attributed to the named organization",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuynnhxm02hjpd1o3j8jtw4r",
+      "company": "Apollo.io",
+      "tool": "SpotDraft",
+      "source_url": "https://www.spotdraft.com/customer-stories/apollo",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_44e97036d44bd2d595ce183c",
+      "company": "athenahealth",
+      "tool": "Suki",
+      "source_url": "https://www.suki.ai/press-releases/suki-and-athenahealth-expand-partnership-with-general-availability-of-ambient-notes-using-sukis-ambient-technology/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzg5dd90064569kzypi3lin",
+      "company": "Heineken",
+      "tool": "Synthesia",
+      "source_url": "https://www.synthesia.io/case-studies/heineken",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzwt6dn00r120xvqec4wc61",
+      "company": "Carey International",
+      "tool": "Talkdesk",
+      "source_url": "https://www.talkdesk.com/customers/carey-international/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyrs1f2002zsp4cldyzhpmc",
+      "company": "Upwork",
+      "tool": "Textio",
+      "source_url": "https://textio.com/resources/case-studies/upwork",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusumu4x007msx1o5u7nnhmc",
+      "company": "Axioma",
+      "tool": "Tidio",
+      "source_url": "https://www.tidio.com/customers/axioma/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_424e19e477671c34f84edbfd",
+      "company": "Covéa",
+      "tool": "Tractable",
+      "source_url": "https://tractable.ai/covea-renewal-tractable/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyna736028opd1ola47nyky",
+      "company": "BOM Bank",
+      "tool": "Unit21",
+      "source_url": "https://www.unit21.ai/customers/how-bom-bank-stops-check-fraud-with-dark-web-monitoring",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvm9clab00i7pj0cl0mwvjtn",
+      "company": "Carter Newell Lawyers",
+      "tool": "Vanta",
+      "source_url": "https://www.vanta.com/customers/carter-newell-lawyers",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusb3g3500olqt1os98c7f38",
+      "company": "Bytefuse",
+      "tool": "Weights & Biases",
+      "source_url": "https://wandb.ai/site/customers/bytefuse/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy4p5ql00k8sg4csj1dosun",
+      "company": "FlightStory",
+      "tool": "Wispr Flow",
+      "source_url": "https://wisprflow.ai/case-study/steven-bartlett",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrbmqy007opv1odfsd5iuv",
+      "company": "Autotorino",
+      "tool": "Zapier",
+      "source_url": "https://zapier.com/customer-stories/autotorino",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuys0wed0077sp4ccyag2yt5",
+      "company": "Anthropic",
+      "tool": "Zip",
+      "source_url": "https://zip.com/customers/anthropic",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvcu9s8v00ecu40cb5glxz00",
+      "company": "Berkeley Group",
+      "tool": "Abnormal AI",
+      "source_url": "https://abnormal.ai/customers/love",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmups9mtx00hxsuxvpolnql5n",
+      "company": "CHRISTUS Health",
+      "tool": "Abridge",
+      "source_url": "https://www.abridge.com/case-study/christus-health",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_ce65a71691b8d0249ea8ae09",
+      "company": "Critical Mass",
+      "tool": "Adobe Firefly",
+      "source_url": "https://business.adobe.com/uk/blog/how-lipton-and-critical-mass-crushed-advertising-targets-with-generative-ai",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuykgy0200l2pq4c149wnvps",
+      "company": "Centaur Labs",
+      "tool": "Amplemarket",
+      "source_url": "https://www.amplemarket.com/customers/centaur-labs",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur339qn0177t61onztcz34r",
+      "company": "Passionfroot",
+      "tool": "Attio",
+      "source_url": "https://attio.com/customers/passionfroot",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwo7in90053pr1oowk60z03",
+      "company": "GoFundMe",
+      "tool": "Augment Code",
+      "source_url": "https://www.augmentcode.com/customers/gofundme",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvwgn8p0099sp1oyr8icwq5",
+      "company": "Harvey",
+      "tool": "Baseten",
+      "source_url": "https://www.baseten.co/resources/customers/how-harvey-works-with-baseten-applied-research/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuypzhj600xypk4ce06yraq6",
+      "company": "AstraZeneca",
+      "tool": "Beamery",
+      "source_url": "https://beamery.com/resources/case-studies/customer-spotlight-kasia-puchta-astrazeneca",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusa77v1001app1obeumoj7l",
+      "company": "Carbon Gate",
+      "tool": "Beautiful.ai",
+      "source_url": "https://www.beautiful.ai/customers/carbongate",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvnp3f120029rv375jh7vvvl",
+      "company": "Bubble",
+      "tool": "Braintrust",
+      "source_url": "https://www.braintrust.dev/customers/bubble",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz0eehh01qkpy1ob3y2g537",
+      "company": "Department of Defense",
+      "tool": "C3 AI",
+      "source_url": "https://c3.ai/customers/a-u-s-department-of-defense-agency-strengthens-logistics-resilience-with-ai-and-real-time-common-operating-picture",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusatgej00hyqt1orgd13dzz",
+      "company": "Stripe",
+      "tool": "Canva",
+      "source_url": "https://www.canva.com/case-studies/stripe/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuywp5bm01qbpj4cpzr7ur8c",
+      "company": "AimAI",
+      "tool": "Cartesia",
+      "source_url": "https://www.cartesia.ai/customers/aimai",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyuhdjj00acpj4cti50wquf",
+      "company": "Fujitsu",
+      "tool": "Celonis",
+      "source_url": "https://www.celonis.com/solutions/stories/fujitsu-inventory-management",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur1asx20028ta1otczcu9fs",
+      "company": "Carvana",
+      "tool": "Claude",
+      "source_url": "https://claude.com/customers/carvana",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuri57ro00fust1otc0092mu",
+      "company": "AlertMedia",
+      "tool": "Clay",
+      "source_url": "https://www.clay.com/customers/alertmedia",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwof72900ampr1o8zgeshmn",
+      "company": "Capacity",
+      "tool": "CodeRabbit",
+      "source_url": "https://www.coderabbit.ai/case-studies/capacity-saves-five-weeks-of-developer-review-time-with-coderabbit",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz1817001yipy1o5hxzz6l6",
+      "company": "Aker Solutions",
+      "tool": "Cognite",
+      "source_url": "https://www.cognite.com/en/customers/aker-solutions",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "2f1796bd-03fd-404c-85af-d316b37b3da1",
+      "company": "BambooHR",
+      "tool": "Cohere",
+      "source_url": "https://cohere.com/customer-stories/bamboohr",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyiacp001yhsg4c4ngo1hqi",
+      "company": "CareRev",
+      "tool": "Comet Opik",
+      "source_url": "https://www.comet.com/site/customers/carerev/",
+      "decision": "exclude",
+      "reason": "Evidence for the Comet platform without evidence of Opik use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyjzuvu008zpq4cao1e4jx8",
+      "company": "DailyPay",
+      "tool": "ComplyAdvantage",
+      "source_url": "https://complyadvantage.com/customer-stories/dailypay-successfully-expands-into-new-markets/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrvjze00ndu11o4bkhh4kb",
+      "company": "Blackwoods",
+      "tool": "Coveo",
+      "source_url": "https://www.coveo.com/en/resources/case-studies/blackwoods",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyjhuma009gpd1o88mk6mov",
+      "company": "Motorola",
+      "tool": "Cyberhaven",
+      "source_url": "https://www.cyberhaven.com/customers/motorola",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyffjry00e7sg4c1ndmvtrh",
+      "company": "ChenMed",
+      "tool": "Cyera",
+      "source_url": "https://www.cyera.com/customer-story/chenmed-achieves-data-security-excellence-with-cyera",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyqemy801eesg1o1av6o3g5",
+      "company": "Daiwa Securities",
+      "tool": "DeepL",
+      "source_url": "https://www.deepl.com/en/customer-stories/daiwa-securities",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkib0nn0000qw5msk2rd51mw",
+      "company": "Aditya Birla Capital",
+      "tool": "DevRev",
+      "source_url": "https://devrev.ai/customers/aditya-birla-capital",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "indexed publisher page",
+      "http_status": 429
+    },
+    {
+      "claim_id": "cmuyutb8z00mmpj4cf8z7hhaw",
+      "company": "BNamericas",
+      "tool": "Dialpad",
+      "source_url": "https://www.dialpad.com/customers/bnamericas/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyk6j8000uapd1oe8zrssa0",
+      "company": "Crossbeam",
+      "tool": "Drata",
+      "source_url": "https://drata.com/customers/crossbeam",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur2uzhf012at61o8ro3uer4",
+      "company": "Assembled",
+      "tool": "Dust",
+      "source_url": "https://dust.tt/customers/part-1-assembled-ai-operating-system",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmv2c5btq002ss64c7smzwf41",
+      "company": "ClickUp",
+      "tool": "E2B",
+      "source_url": "https://e2b.dev/customers/clickup",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkibn1oi00defjmsjbo88y8t",
+      "company": "Telus Digital",
+      "tool": "ElevenLabs",
+      "source_url": "https://elevenlabs.io/blog/fuel-ix-telus-digital",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwd5pspp0068uh4enabmv8ri",
+      "company": "CodeRabbit",
+      "tool": "Exa",
+      "source_url": "https://exa.ai/customers/coderabbit",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyooucu00j9sg1ow3g2pmp7",
+      "company": "Gamesight",
+      "tool": "Fellow",
+      "source_url": "https://fellow.ai/customers/gamesight",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuv8gzoh00e3sn1o9rp44ldm",
+      "company": "Carrefour",
+      "tool": "Figma",
+      "source_url": "https://www.figma.com/customers/how-carrefour-leveraged-ai-to-drive-design-delivery/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_b39ed3893a3681d29ffb3fb1",
+      "company": "Adopter Marketing",
+      "tool": "Fireflies",
+      "source_url": "https://fireflies.ai/blog/how-adopter-marketing-used-fireflies-for-better-notes",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuykkxho013upd1oldotyyh0",
+      "company": "Ascent Aviation Services",
+      "tool": "FloQast",
+      "source_url": "https://www.floqast.com/stories/ascent-aviation-automates-bank-recs-with-floqast",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkib6vyz0011iemsfe5ebl6a",
+      "company": "PTSMC",
+      "tool": "Frase",
+      "source_url": "https://www.frase.io/case-studies/ptsmc-doubled-conversions",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_dd761f95256120630cae1c9f",
+      "company": "Arizona State University",
+      "tool": "Gemini",
+      "source_url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkibtzk100hzfjmskpb271q2",
+      "company": "Covered California",
+      "tool": "Glean",
+      "source_url": "https://www.glean.com/resources/customer-stories/covered-california",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzgbced00hv569kjxcyg23s",
+      "company": "Nasdaq",
+      "tool": "Gong",
+      "source_url": "https://www.gong.io/customers/case-studies/the-future-of-fintech-nasdaq-uses-gong-to-make-bullish-bets",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_7167f26b9a0dd1e474815998",
+      "company": "ATS Underwriting",
+      "tool": "Gradient AI",
+      "source_url": "https://www.gradientai.com/ats-underwriting-chooses-gradient-ai-to-expand-medical-stop-loss-insurance-business/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuygilm500ywsg4csbs5lczj",
+      "company": "AES",
+      "tool": "H2O.ai",
+      "source_url": "https://h2o.ai/case-studies/aes-h2o",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyihy1r01zisg4cujhkvsbx",
+      "company": "Citi",
+      "tool": "Harness",
+      "source_url": "https://www.harness.io/case-studies/citi-improves-software-delivery-performance-reduces-toil-with-harness-cd",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwon10000g2pr1okqetevxm",
+      "company": "Brex",
+      "tool": "Hex",
+      "source_url": "https://www.brex.com/journal/brex-benchmark-articles/top-25-fastest-growing-startups-of-fall-2026",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy2yq1z00rxsh1o9vc5lzyd",
+      "company": "Autotrader",
+      "tool": "Hightouch",
+      "source_url": "https://hightouch.com/customers/auto-trader",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_b32e4d5182ded42e04b687ee",
+      "company": "Happy Returns",
+      "tool": "Horizon3.ai NodeZero",
+      "source_url": "https://horizon3.ai/customer-story/happy-returns-webapp-security-validation/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmw3v8ogj0025v94e3997g9yn",
+      "company": "Crown Bioscience",
+      "tool": "HubSpot",
+      "source_url": "https://www.hubspot.com/case-studies/crown-bioscience-keeps-drug-developers-in-the-right-conversations-at-every-stage-with-hubspots-nurture-agent-and-marketing-studio",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuylgv5101l8pd1odg8ps7a2",
+      "company": "Bold Commerce",
+      "tool": "incident.io",
+      "source_url": "https://incident.io/customers/netflix",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuv0upu700igui1ono8p0u6y",
+      "company": "AI21 Labs",
+      "tool": "Intercom",
+      "source_url": "https://www.intercom.com/customers/ai21-labs",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmv2x1lr700l5s74cuf1mm2mm",
+      "company": "Bonterra",
+      "tool": "Jasper",
+      "source_url": "https://www.jasper.ai/case-studies/bonterra",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmv6qx02k007zzm4cgcf349pd",
+      "company": "Alessandra Torre",
+      "tool": "Jotform",
+      "source_url": "https://www.jotform.com/customer-stories/alessandra-torre/",
+      "decision": "exclude",
+      "reason": "Individual use without a company entity in the record",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cm19b924924ce5y2h2ynimsj3",
+      "company": "Bird & Bird",
+      "tool": "Legora",
+      "source_url": "https://legora.com/customers/bird-bird",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyvls7b00tvpj1oqtfh9map",
+      "company": "Businessolver",
+      "tool": "Loopio",
+      "source_url": "https://loopio.com/case-study/businessolver/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "indexed publisher page",
+      "http_status": null
+    },
+    {
+      "claim_id": "cmuyw95ow0164pj1op2wberjd",
+      "company": "Temecula Valley Unified School District",
+      "tool": "MagicSchool",
+      "source_url": "https://www.magicschool.ai/case-studies/temecula-ai-guidelines",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_0de5ab55e8bf0b12848777e3",
+      "company": "Sommo",
+      "tool": "Make",
+      "source_url": "https://www.make.com/success-stories/sommo-make-powers-extra-leads",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy419r900l7t14c0si4mobw",
+      "company": "Anaconda",
+      "tool": "Metaview",
+      "source_url": "https://www.metaview.ai/customers/wall-of-love",
+      "decision": "exclude",
+      "reason": "Commentary, recommendation or tutorial without demonstrated use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyztcsv01dlpy1o69ezjdti",
+      "company": "ChowNow",
+      "tool": "Mindtickle",
+      "source_url": "https://www.mindtickle.com/customer-stories/learn-how-formalized-onboarding-helped-chownow-reduce-time-to-first-deal-by-50/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "c19baa524749cxm0gypb34e9",
+      "company": "ASML",
+      "tool": "Mistral",
+      "source_url": "https://mistral.ai/customers/asml/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyvru86017mpj4cyznxtoo7",
+      "company": "American Express",
+      "tool": "Movable Ink",
+      "source_url": "https://movableink.com/case-studies/fireside-chat-with-american-express",
+      "decision": "exclude",
+      "reason": "Commentary, recommendation or tutorial without demonstrated use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvabnbu008wpr1owuvudw9y",
+      "company": "Broadcom",
+      "tool": "Moveworks",
+      "source_url": "https://www.moveworks.com/us/en/customers/broadcom-integrates-it-knowledge-base-with-moveworks-ai",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuygp07j0153sg4co3tuq6e7",
+      "company": "Converge",
+      "tool": "Nebius AI Cloud",
+      "source_url": "https://nebius.com/customer-stories/converge-bio",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_6e9516567da48bf18d4a9e06",
+      "company": "Leonardo",
+      "tool": "Neural Concept",
+      "source_url": "https://www.neuralconcept.com/press-release/neural-concept-100-percent-enterprise-growth",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz2v2fu00o8sh1o0xnvb2l7",
+      "company": "Care New England",
+      "tool": "Notable",
+      "source_url": "https://www.notablehealth.com/customer-stories/care-new-england-reports-a-55-reduction-in-authorization-related-write-offs-since-automating-radiology-prior-authorizations-and-notice-of-admissions",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyz8066015wpy1o0ud9ypwh",
+      "company": "Ballzy",
+      "tool": "Optimove",
+      "source_url": "https://www.optimove.com/resources/case-studies/ballzy",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyw6q3k0140pj1ofmec7voz",
+      "company": "Cleveland Clinic Abu Dhabi",
+      "tool": "Owkin",
+      "source_url": "https://www.owkin.com/case-studies/k-pro-clinical-research-support",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_3bf75088303085c667223e29",
+      "company": "Annapath Pathology Services",
+      "tool": "PathAI",
+      "source_url": "https://www.pathai.com/news/pathai-expands-aisight-digital-pathology-adoption-with-four-new-laboratory-partners",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuts03be00ngpv1oo9e2i072",
+      "company": "Bessemer Venture Partners",
+      "tool": "Perplexity",
+      "source_url": "https://www.perplexity.ai/hub/customers/bvp",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyvwgo3010tpj1o5c4t1ous",
+      "company": "Vodafone Italy",
+      "tool": "Persado",
+      "source_url": "https://www.persado.com/resource-library/case-studies/how-vodafone-italy-raised-conversions-42-by-developing-creative-in-a-radically-new-way",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrmkc600igpv1ob25a1v9d",
+      "company": "Clay Dazing",
+      "tool": "Photoroom",
+      "source_url": "https://www.photoroom.com/customer-stories/clay-dazing",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy4y5l0011ft14c2uqg2zky",
+      "company": "Arcellx",
+      "tool": "Prezent",
+      "source_url": "https://www.prezent.ai/case-studies/how-prezent-helps-arcellx-save-over-50k-per-year",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyyqwn8010hpe4cok2swyog",
+      "company": "Alchemy",
+      "tool": "Profound",
+      "source_url": "https://www.tryprofound.com/customers/alchemy",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy3mfwy003lsg4cfpc1rivo",
+      "company": "Bubble",
+      "tool": "QA Wolf",
+      "source_url": "https://www.qawolf.com/customers/bubble",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyotagx006ypk4cqeibmp2b",
+      "company": "AngelList",
+      "tool": "Ramp",
+      "source_url": "https://ramp.com/customers/elevenlabs",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuywlcav002spe4cgztw8soe",
+      "company": "Angi",
+      "tool": "Regal",
+      "source_url": "https://www.regal.ai/case-study/angi",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvvaywjw00acsq0d94p6oq1a",
+      "company": "Cockle Finance",
+      "tool": "Replit",
+      "source_url": "https://replit.com/customers/cockle-finance",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvb4hsi00m2sx1o8kwjpdbb",
+      "company": "Boatzon",
+      "tool": "Retell AI",
+      "source_url": "https://www.retellai.com/case-study/how-retell-ai-became-boatzons-top-performing-employee",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkbdzpb2001404l5qtnawz8y",
+      "company": "Checkout.com",
+      "tool": "Retool",
+      "source_url": "https://retool.com/customers/checkout",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuytq2x900xqpc4cojjarb14",
+      "company": "Bus Industrial Tools",
+      "tool": "Rossum",
+      "source_url": "https://rossum.ai/customer-stories/bus-industrial-tools/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuuamt1s001lss1oy0xp3huh",
+      "company": "DigitalOcean",
+      "tool": "Scribe",
+      "source_url": "https://scribe.com/customers/digitalocean",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyyihp700n2py1okkb2282u",
+      "company": "Clapping Dog Media",
+      "tool": "Scrunch",
+      "source_url": "https://scrunch.com/case-studies/2025-06-agency-partner-spotlight:-meet-clapping-dog-media",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvw4e8v0039pk1omznoy35p",
+      "company": "Barry-Wehmiller",
+      "tool": "SentinelOne",
+      "source_url": "https://www.sentinelone.com/customers/norwegian-airlines/?utm_source=https%3A%2F%2Fwww.sentinelone.com%2F&utm_medium=s1-site-referral",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 429
+    },
+    {
+      "claim_id": "cmuubatm300njsz1ozca4iqv7",
+      "company": "Booking.com",
+      "tool": "ServiceNow",
+      "source_url": "https://www.servicenow.com/customers/booking.html",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvnp4jtu004np537hskkclzy",
+      "company": "Bared Footwear",
+      "tool": "Sierra",
+      "source_url": "https://sierra.ai/customers/singtel",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyj2oq80030pd1oiop8ecst",
+      "company": "Helvetia",
+      "tool": "Snyk",
+      "source_url": "https://snyk.io/case-studies/helvetia/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_68341f38a35f49b7e4ac380b",
+      "company": "CERN",
+      "tool": "Sourcegraph",
+      "source_url": "https://sourcegraph.com/case-studies/cern-reduces-technical-debt",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwd5phgr0080uh4eziof00ft",
+      "company": "Apiture",
+      "tool": "Speakeasy",
+      "source_url": "https://www.speakeasy.com/customers/apiture",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuynm8uk02espd1o6pc2h008",
+      "company": "Astronomer",
+      "tool": "SpotDraft",
+      "source_url": "https://www.spotdraft.com/customer-stories/astronomer-powered-by-spotdraft",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_3c2f631e34f4d50395c21c60",
+      "company": "Austin Regional Clinic",
+      "tool": "Suki",
+      "source_url": "https://www.suki.ai/press-releases/austin-regional-clinic-cuts-documentation-time-by-18-and-optimizes-coding-accuracy-using-suki-ai/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvtv4rp2006ntg0dbadgra22",
+      "company": "LBBW",
+      "tool": "Synthesia",
+      "source_url": "https://www.synthesia.io/case-studies/lbbw",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutr4z1j001hpv1ofced4ok9",
+      "company": "Evara Health",
+      "tool": "Talkdesk",
+      "source_url": "https://www.talkdesk.com/customers/evara-health/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyrrs0n002vsp4chcp8cakk",
+      "company": "Velera",
+      "tool": "Textio",
+      "source_url": "https://textio.com/resources/case-studies/velera",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusumskm007esx1orcekxlaf",
+      "company": "Bella Sante",
+      "tool": "Tidio",
+      "source_url": "https://www.tidio.com/customers/bella-sante/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_d33fa9488d263a92b3fef52b",
+      "company": "Ageas",
+      "tool": "Tractable",
+      "source_url": "https://tractable.ai/ageas-is-first-uk-insurer-to-use-ai-to-create-end-to-end-car-damage-assessments-and-estimates/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyn97zj026xpd1oio1rrk6n",
+      "company": "Central Payments",
+      "tool": "Unit21",
+      "source_url": "https://www.unit21.ai/customers/central-payments",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy2jwbp00o2pp1oo8wyg6zg",
+      "company": "Clay",
+      "tool": "Vanta",
+      "source_url": "https://www.vanta.com/customers/clay",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "b367bc52-30ce-4829-84c9-7fbaa062f58d",
+      "company": "Canva",
+      "tool": "Weights & Biases",
+      "source_url": "https://wandb.ai/site/customers/canva-model-registry/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy4os8v00jwsg4cb73w9n1n",
+      "company": "Gaurav Vohra",
+      "tool": "Wispr Flow",
+      "source_url": "https://wisprflow.ai/case-study/gaurav-vohra",
+      "decision": "exclude",
+      "reason": "Individual use without a company entity in the record",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrc7z9009ypv1ojkte2u78",
+      "company": "Brightspot",
+      "tool": "Zapier",
+      "source_url": "https://zapier.com/customer-stories/brightspot",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuys17x9008csp4cgz0cfo4i",
+      "company": "CIBC",
+      "tool": "Zip",
+      "source_url": "https://zip.com/customers/dollar-tree",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyfcwh500b6sg4cjako0f4n",
+      "company": "Bühler Group",
+      "tool": "Abnormal AI",
+      "source_url": "https://abnormal.ai/customers/love",
+      "decision": "exclude",
+      "reason": "Commentary, recommendation or tutorial without demonstrated use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmups9v2e00ihsuxvemwekxx1",
+      "company": "Corewell Health",
+      "tool": "Abridge",
+      "source_url": "https://www.abridge.com/case-study/corewell-health",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_e1a66bda195bb884fff038fc",
+      "company": "Deloitte",
+      "tool": "Adobe Firefly",
+      "source_url": "https://news.adobe.com/news/2025/02/firefly-web-app-commercially-safe",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyke1t100fapq4c07cez3wd",
+      "company": "Ceros",
+      "tool": "Amplemarket",
+      "source_url": "https://www.amplemarket.com/customers/ceros",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzwx2el00x420xvmqzq2wue",
+      "company": "Railway",
+      "tool": "Attio",
+      "source_url": "https://attio.com/customers/railway",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwo7odo005tpr1o38329msw",
+      "company": "Handoff",
+      "tool": "Augment Code",
+      "source_url": "https://www.augmentcode.com/customers/handoff",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvwg75l007tsp1o0q1o99xl",
+      "company": "Hebbia",
+      "tool": "Baseten",
+      "source_url": "https://www.baseten.co/resources/customers/hebbia/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuypzg6j00xqpk4cvrm18kah",
+      "company": "AtkinsRéalis",
+      "tool": "Beamery",
+      "source_url": "https://beamery.com/resources/case-studies/case-study-atkins-realis",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusa7fas001wpp1oyyzgmsun",
+      "company": "CMIT Solutions",
+      "tool": "Beautiful.ai",
+      "source_url": "https://www.beautiful.ai/customers/cmit-solutions-solves-their-it-education-training-needs-with-beautiful-ai",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwoth5000ljpr1opk0se0ec",
+      "company": "Cloudflare",
+      "tool": "Braintrust",
+      "source_url": "https://www.braintrust.dev/customers/cloudflare",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz0ee4901qhpy1o1zn5set5",
+      "company": "Seattle Department of Transportation",
+      "tool": "C3 AI",
+      "source_url": "https://c3.ai/customers/seattle-department-of-transportation-advances-vision-zero-with-ai-driven-safety-insights",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusathv700i2qt1o6c26fst7",
+      "company": "The Danberry Co.",
+      "tool": "Canva",
+      "source_url": "https://www.canva.com/case-studies/the-danberry-co/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuywpjgm01s2pj4cfzohp64z",
+      "company": "Arini",
+      "tool": "Cartesia",
+      "source_url": "https://www.cartesia.ai/customers/arini",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyuht0x00b0pj4c6zhuqdg6",
+      "company": "MOL Group",
+      "tool": "Celonis",
+      "source_url": "https://www.celonis.com/solutions/stories/mol-order-to-cash",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuv4ogcn000vt01o4z6u1xsy",
+      "company": "ClickUp",
+      "tool": "Claude",
+      "source_url": "https://clickup.com/blog/claude-ai-prompts/",
+      "decision": "exclude",
+      "reason": "Commentary, recommendation or tutorial without demonstrated use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkibf2h7007kfjmsa1go4577",
+      "company": "Anthropic",
+      "tool": "Clay",
+      "source_url": "https://www.clay.com/customers/open-ai",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwoeiv0009rpr1o3hitth7c",
+      "company": "Clerk",
+      "tool": "CodeRabbit",
+      "source_url": "https://www.coderabbit.ai/case-studies/inside-clerks-40-percent-faster-merge-workflow-with-coderabbit",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz17bc201x3py1oumjvlzfh",
+      "company": "Celanese",
+      "tool": "Cognite",
+      "source_url": "https://www.cognite.com/en/customers/celanese",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmurir2wo018iup1o3arbwkn1",
+      "company": "CoreWeave",
+      "tool": "Cohere",
+      "source_url": "https://cohere.com/customer-stories/ada",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyi9p2g01x6sg4c4nteq2un",
+      "company": "Etsy",
+      "tool": "Comet Opik",
+      "source_url": "https://www.comet.com/site/customers/etsy/",
+      "decision": "exclude",
+      "reason": "Evidence for the Comet platform without evidence of Opik use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyjzr9g008opq4cl22kcnwc",
+      "company": "Globus Payments",
+      "tool": "ComplyAdvantage",
+      "source_url": "https://complyadvantage.com/customer-stories/globus-payments-uses-flexible-transaction-monitoring-to-power-growth-into-new-markets/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrwxw200p2u11orooibp26",
+      "company": "Boomi",
+      "tool": "Coveo",
+      "source_url": "https://www.coveo.com/en/resources/case-studies/boomi",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyji4hz00a2pd1ooxnvjr1j",
+      "company": "Plaid",
+      "tool": "Cyberhaven",
+      "source_url": "https://www.cyberhaven.com/customers/plaid",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyff44w00dusg4cs1ssnrh4",
+      "company": "Genuine Parts Company",
+      "tool": "Cyera",
+      "source_url": "https://www.cyera.com/customer-story/genuine-parts-company-closes-a-40-petabyte-data-blind-spot-with-cyera",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyqfqaz01gvsg1ouwslbtgz",
+      "company": "Deutsche Bahn",
+      "tool": "DeepL",
+      "source_url": "https://www.deepl.com/en/customer-stories/deutsche-bahn",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmv1itpm7003xpo4c1wwkcl11",
+      "company": "Anand Rathi (AR Digital Wealth)",
+      "tool": "DevRev",
+      "source_url": "https://devrev.ai/customers/anand-rathi-case-study",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "indexed publisher page",
+      "http_status": 429
+    },
+    {
+      "claim_id": "cmuyutc9l00mqpj4c3x4dfvd7",
+      "company": "Builder Prime",
+      "tool": "Dialpad",
+      "source_url": "https://www.dialpad.com/customers/builder-prime/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyk65bc00sspd1onl87y6hq",
+      "company": "EAB",
+      "tool": "Drata",
+      "source_url": "https://drata.com/customers/eab",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur2votn013yt61oae5lco72",
+      "company": "Bpifrance",
+      "tool": "Dust",
+      "source_url": "https://dust.tt/customers/how-bpifrance-deployed-agentic-ai-across-500-employees-with-artefact-and-dust",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwoj3iy00a7sc1ol1r0avkl",
+      "company": "Effective AI",
+      "tool": "E2B",
+      "source_url": "https://e2b.dev/customers/effectiveai",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_d7238c1e0de166a6acf6db88",
+      "company": "apna",
+      "tool": "ElevenLabs",
+      "source_url": "https://elevenlabs.io/blog/apna-interview-agents",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwd5puai006fuh4elqz6bxdk",
+      "company": "Firefox",
+      "tool": "Exa",
+      "source_url": "https://exa.ai/customers/firefox",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyoojh600i0sg1oh6pjswao",
+      "company": "Go Fish Digital",
+      "tool": "Fellow",
+      "source_url": "https://fellow.ai/customers/go-fish-digital",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuv8hbzr00frsn1o9u0b248r",
+      "company": "Customer.io",
+      "tool": "Figma",
+      "source_url": "https://www.figma.com/customers/how-customerio-simplifies-design-handoffs-with-variables-and-dev-mode/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_48cdf0bcf30278ce0988836f",
+      "company": "Agile Talent",
+      "tool": "Fireflies",
+      "source_url": "https://fireflies.ai/blog/agile-talent-avoids-critical-information-loss-with-fireflies-ai",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmv051xi5005atr4cx5x95vbh",
+      "company": "Aspect Energy",
+      "tool": "FloQast",
+      "source_url": "https://www.floqast.com/stories/aspect-energy-shaves-20-days-off-global-close-with-floqast",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkib7112001niems3plwv32m",
+      "company": "Red 11 Media",
+      "tool": "Frase",
+      "source_url": "https://www.frase.io/case-studies/red-11-media-content-scaling",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_a4586d92849e695bf4bd33a5",
+      "company": "Aviator",
+      "tool": "Gemini",
+      "source_url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "8e2ce201-1e02-4b6d-97d0-3187082c8f97",
+      "company": "Databricks",
+      "tool": "Glean",
+      "source_url": "https://www.glean.com/resources/customer-stories/databricks",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkcw9w8l001604lae93obao4",
+      "company": "Uber",
+      "tool": "Gong",
+      "source_url": "https://www.gong.io/customers/case-studies/uber-freight-drives-standardized-meddpicc-adoption-and-improves-deal-outcomes-with-gong",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_9c2d0443735be37a6bf43d14",
+      "company": "ATTIC",
+      "tool": "Gradient AI",
+      "source_url": "https://www.gradientai.com/press_attic-selects-gradient-ai-to-improve-freight-insurance-claims-outcomes/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvcu625i00bzsh0csl3otvpy",
+      "company": "Airvantage",
+      "tool": "H2O.ai",
+      "source_url": "https://h2o.ai/case-studies/airvantage-h2o",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyiisrk020osg4co2abdfzx",
+      "company": "Deluxe",
+      "tool": "Harness",
+      "source_url": "https://www.harness.io/case-studies/deluxe",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwooa7f00i6pr1ollbf3xv8",
+      "company": "Calendly",
+      "tool": "Hex",
+      "source_url": "https://hex.tech/customers/calendly/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy3092f00u6sh1owhfjn0zz",
+      "company": "Bol.com",
+      "tool": "Hightouch",
+      "source_url": "https://hightouch.com/customers/bol",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_8763b6622bfc3ce4fa564e03",
+      "company": "Intuitus",
+      "tool": "Horizon3.ai NodeZero",
+      "source_url": "https://horizon3.ai/customer-story/advancing-emergency-response-security-with-autonomous-pentesting/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusa7uvb002cqt1ox01esgyj",
+      "company": "Crunch Fitness",
+      "tool": "HubSpot",
+      "source_url": "https://www.hubspot.com/case-studies/crunch-fitness",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuylgncs01kipd1ovh07zix1",
+      "company": "Buffer",
+      "tool": "incident.io",
+      "source_url": "https://incident.io/customers/buffer",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuv0viwg00ktui1ow3yfimza",
+      "company": "Appliances Online",
+      "tool": "Intercom",
+      "source_url": "https://www.intercom.com/customers/appliances-online",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzg2r39000b569kgyu6zxnz",
+      "company": "Cushman & Wakefield",
+      "tool": "Jasper",
+      "source_url": "https://www.jasper.ai/case-studies/cushman-wakefield",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuuaxfe000fusz1odzcw58bc",
+      "company": "Amsterdam University of Applied Sciences",
+      "tool": "Jotform",
+      "source_url": "https://www.jotform.com/customer-stories/amsterdam-university-of-applied-sciences/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuva8hdd002zsx1owd513bgp",
+      "company": "Borenius",
+      "tool": "Legora",
+      "source_url": "https://legora.com/customers/borenius",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyvl91z00szpj1oplvqgdcq",
+      "company": "Celonis",
+      "tool": "Loopio",
+      "source_url": "https://loopio.com/case-study/celonis-winning-rfx/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "indexed publisher page",
+      "http_status": null
+    },
+    {
+      "claim_id": "cmuyw8xdr015wpj1oj2kg578d",
+      "company": "The Stepping Stones Group",
+      "tool": "MagicSchool",
+      "source_url": "https://www.magicschool.ai/case-studies/stepping-stones-group",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvwb6uq0060pk1o5wufue74",
+      "company": "Stellantis",
+      "tool": "Make",
+      "source_url": "https://www.make.com/success-stories/how-stellantis-scaled-an-ai-voice-agent-with-make",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy3xvj300bgt14cmgln1e2r",
+      "company": "Brex",
+      "tool": "Metaview",
+      "source_url": "https://www.metaview.ai/resources/case-study/brex-level-up-values-interviews",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyzs2ix01b1py1o9ymkld12",
+      "company": "Cisco",
+      "tool": "Mindtickle",
+      "source_url": "https://www.mindtickle.com/customer-stories/integrace-health-enables-sales-team-from-the-top-down-with-mindtickle/",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuriczck00jast1oczb9cnd4",
+      "company": "Austrian Academy of Sciences",
+      "tool": "Mistral",
+      "source_url": "https://mistral.ai/customers/austrian-academy-of-sciences/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyvpla1011tpj4cgq7fv3o5",
+      "company": "Asda",
+      "tool": "Movable Ink",
+      "source_url": "https://movableink.com/case-studies/asdas-1-1-personalization-strategy-for-shopper-devotion",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvaao0p007hpr1o88uqqx0y",
+      "company": "Ciena",
+      "tool": "Moveworks",
+      "source_url": "https://www.moveworks.com/us/en/customers/ciena-cut-support-turnaround-from-days-to-minutes",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuygq1la017ksg4crxb1mv4g",
+      "company": "Dubformer",
+      "tool": "Nebius AI Cloud",
+      "source_url": "https://nebius.com/customer-stories/dubformer",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyuyl3700i5pj1ohz2uizgr",
+      "company": "MAHLE",
+      "tool": "Neural Concept",
+      "source_url": "https://www.neuralconcept.com/customer-stories/mahle-radial-blower-neural-concept",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200,
+      "resolved_url": "https://www.neuralconcept.com/industry-stories/mahle-radial-blower-neural-concept"
+    },
+    {
+      "claim_id": "cmuz2uwc200njsh1ohqlisik5",
+      "company": "Castell",
+      "tool": "Notable",
+      "source_url": "https://www.notablehealth.com/customer-stories/castell-payer-care-gap-attestation",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyzla42016dpy1o00nwr1rw",
+      "company": "BETFAN",
+      "tool": "Optimove",
+      "source_url": "https://www.optimove.com/resources/case-studies/betfan",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyw6i4i013mpj1o5deuhdrt",
+      "company": "Sanofi",
+      "tool": "Owkin",
+      "source_url": "https://www.owkin.com/newsfeed/owkin-to-build-ai-agents-as-part-of-a-multi-year-k-pro-collaboration-with-sanofi",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_7e829dcb19f4a2db5b95b63a",
+      "company": "Discovery Life Sciences",
+      "tool": "PathAI",
+      "source_url": "https://www.pathai.com/news/pathai-partners-with-discovery-life-sciences-to-deploy-first-ai-powered-biospecimen-solutions",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvqlyycz0037s437l2zdzdjn",
+      "company": "Combinely",
+      "tool": "Perplexity",
+      "source_url": "https://www.perplexity.ai/hub/customers/combinely",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_07ede0a62edb856916dadc0d",
+      "company": "Chase",
+      "tool": "Persado",
+      "source_url": "https://www.persado.com/company/press-releases/new-partnership-between-amperity-cdp-and-persado-signals-acceleration-of-the-next-era-of-personalization-for-data-driven-brands",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrmalg00hipv1ongfbkzwb",
+      "company": "Completeful",
+      "tool": "Photoroom",
+      "source_url": "https://www.photoroom.com/customer-stories/completeful",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy4yjm7011wt14ch8badhi1",
+      "company": "Aviatrix",
+      "tool": "Prezent",
+      "source_url": "https://www.prezent.ai/case-studies/how-cold-chain-technologies-slashed-presentation-time-by-70-and-scaled-consistent-branding",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyyqylc010lpe4c71bh8c6w",
+      "company": "Aleph",
+      "tool": "Profound",
+      "source_url": "https://www.tryprofound.com/customers/aleph",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy3me3j0039sg4cb6b34qai",
+      "company": "Chief",
+      "tool": "QA Wolf",
+      "source_url": "https://www.qawolf.com/customers/chief",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyot68y006dpk4con6f67rj",
+      "company": "Barry's",
+      "tool": "Ramp",
+      "source_url": "https://ramp.com/customers/barrys",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuywl4yw002ape4c46ako08k",
+      "company": "Aprende Institute",
+      "tool": "Regal",
+      "source_url": "https://www.regal.ai/case-study/aprende-institute",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy1r9xb008rpp1obgmyziql",
+      "company": "GenAIPI",
+      "tool": "Replit",
+      "source_url": "https://replit.com/customers/genaipi",
+      "decision": "exclude",
+      "reason": "The named entity is the application built, rather than the organization using the tool",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvb4ocn00mesx1oeozwljiw",
+      "company": "BrightChamps",
+      "tool": "Retell AI",
+      "source_url": "https://www.retellai.com/case-study/how-brightchamps-unlocking-scale-in-global-edtech-with-ai-powered-sales-calls",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkbdzouy000704l5qs24osw5",
+      "company": "ClickUp",
+      "tool": "Retool",
+      "source_url": "https://retool.com/customers/clickup",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuytpx1m00xjpc4c1gj3dn2h",
+      "company": "CLS Holdings",
+      "tool": "Rossum",
+      "source_url": "https://rossum.ai/customer-stories/cls-holdings/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvc8n01o004hpl0c6jx1fasv",
+      "company": "KLN Family Brands",
+      "tool": "Scribe",
+      "source_url": "https://scribe.com/customers/kln-family-brands-x-scribe",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyyid2b00mdpy1od1id87ou",
+      "company": "Proper Propaganda",
+      "tool": "Scrunch",
+      "source_url": "https://scrunch.com/case-studies/proper-propaganda-5x-lead-gen-by-optimizing-for-ai-search",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvw4nwc0040pk1ouv91dav2",
+      "company": "Capital Area Intermediate Unit (CAIU)",
+      "tool": "SentinelOne",
+      "source_url": "https://www.sentinelone.com/customers/norwegian-airlines/?utm_source=https%3A%2F%2Fwww.sentinelone.com%2F&utm_medium=s1-site-referral",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 429
+    },
+    {
+      "claim_id": "cmvgkf2wc001yq85qeu6tjwdu",
+      "company": "City of Raleigh",
+      "tool": "ServiceNow",
+      "source_url": "https://www.servicenow.com/fr-ca/customers/raleigh-north-carolina.html",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmupt97fc00by4rxv8netskbk",
+      "company": "BARK",
+      "tool": "Sierra",
+      "source_url": "https://sierra.ai/customers/bark",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyj1ou8000bpd1oc1agf0vh",
+      "company": "Komatsu",
+      "tool": "Snyk",
+      "source_url": "https://snyk.io/case-studies/komatsu/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_2681f2bc8c4f179cd90e7952",
+      "company": "Coinbase",
+      "tool": "Sourcegraph",
+      "source_url": "https://sourcegraph.com/case-studies/coinbase-speeds-up-financial-systems-innovation",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwd5ou760060uh4ezypb472j",
+      "company": "Codat",
+      "tool": "Speakeasy",
+      "source_url": "https://www.speakeasy.com/customers/codat",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuynm4pm02eapd1odh78cjty",
+      "company": "Beamery",
+      "tool": "SpotDraft",
+      "source_url": "https://www.spotdraft.com/customer-stories/beamery-powered-by-spotdraft",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_cc63a07ce974608582301405",
+      "company": "Azalea Health",
+      "tool": "Suki",
+      "source_url": "https://www.suki.ai/press-releases/suki-establishes-program-to-ai-enable-electronic-health-records/",
+      "decision": "exclude",
+      "reason": "Announced deployment without demonstrated use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmv9fmiz200c2u54c83n3mthq",
+      "company": "Linde",
+      "tool": "Synthesia",
+      "source_url": "https://www.synthesia.io/case-studies/linde",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutr4p14000epv1o23dvovbo",
+      "company": "Farfetch",
+      "tool": "Talkdesk",
+      "source_url": "https://www.talkdesk.com/customers/farfetch/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusumqxc0075sx1o7rp88vmk",
+      "company": "Cove",
+      "tool": "Tidio",
+      "source_url": "https://www.tidio.com/customers/cove/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_97b5b22beb5b93b672516fc7",
+      "company": "Direct Assurance",
+      "tool": "Tractable",
+      "source_url": "https://tractable.ai/direct-assurance-tractable-partnership-2/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuynag78029jpd1ob3sx7ogx",
+      "company": "Cogent Bank",
+      "tool": "Unit21",
+      "source_url": "https://www.unit21.ai/customers/cogent-bank",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy2k2yp00p8pp1o58fmiuop",
+      "company": "DocGo",
+      "tool": "Vanta",
+      "source_url": "https://www.vanta.com/customers/docgo",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusb3wvt00qoqt1ovarx0vrw",
+      "company": "Capella Space",
+      "tool": "Weights & Biases",
+      "source_url": "https://wandb.ai/site/customers/capella/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy4qakw00kisg4cz4696gz4",
+      "company": "Lerai",
+      "tool": "Wispr Flow",
+      "source_url": "https://wisprflow.ai/case-study/tijs-nieuwboer",
+      "decision": "exclude",
+      "reason": "The user described cannot be reliably attributed to the named organization",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrbij40076pv1ojlfkc4vq",
+      "company": "Calendly",
+      "tool": "Zapier",
+      "source_url": "https://zapier.com/customer-stories/calendly",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuys0y25007gsp4cp65okqkl",
+      "company": "Datadog",
+      "tool": "Zip",
+      "source_url": "https://zip.com/customers/datadog",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyfcy0n00bhsg4c4vqtd3wp",
+      "company": "Choice Hotels",
+      "tool": "Abnormal AI",
+      "source_url": "https://abnormal.ai/customers/love",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmupsa9yj00jcsuxvz91fo5o8",
+      "company": "Emory Healthcare",
+      "tool": "Abridge",
+      "source_url": "https://www.abridge.com/press-release/abridge-inside-emory",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_bad1c87c894b160c18e6b426",
+      "company": "Dentsu",
+      "tool": "Adobe Firefly",
+      "source_url": "https://news.adobe.com/news/2025/02/firefly-web-app-commercially-safe",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyke3am00fdpq4cfuks97d5",
+      "company": "Clara",
+      "tool": "Amplemarket",
+      "source_url": "https://www.amplemarket.com/customers/clara",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkibads80045fjmsdw47n8r9",
+      "company": "Snackpass",
+      "tool": "Attio",
+      "source_url": "https://attio.com/customers/snackpass",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwo7iu10056pr1oqr6mnovk",
+      "company": "Intercom",
+      "tool": "Augment Code",
+      "source_url": "https://www.augmentcode.com/customers/intercom-scales-with-augment",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmw6ptsfn002esl4e40mggmxo",
+      "company": "LangChain",
+      "tool": "Baseten",
+      "source_url": "https://www.baseten.co/resources/customers/langchain",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200,
+      "resolved_url": "https://www.baseten.co/resources/customers/langchain/"
+    },
+    {
+      "claim_id": "cmuypyuk600wlpk4ca459550j",
+      "company": "Autodesk",
+      "tool": "Beamery",
+      "source_url": "https://beamery.com/resources/case-studies/customer-spotlight-balaji-viswanathan-autodesk",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzwk29m009t20xvv3mhm22j",
+      "company": "Cvent",
+      "tool": "Beautiful.ai",
+      "source_url": "https://www.beautiful.ai/customers/cvent",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwotcd800kspr1ofubmln7o",
+      "company": "Coursera",
+      "tool": "Braintrust",
+      "source_url": "https://www.braintrust.dev/customers/coursera",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz0ebor01q9py1oonn2bqz9",
+      "company": "Shell",
+      "tool": "C3 AI",
+      "source_url": "https://c3.ai/customers/enterprise-ai-at-shell",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusatj5500i6qt1oucfxnjif",
+      "company": "Virginia Department of Health",
+      "tool": "Canva",
+      "source_url": "https://www.canva.com/case-studies/virginia-department-of-health/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuywpczj01rgpj4crtydg9xx",
+      "company": "Assort Health",
+      "tool": "Cartesia",
+      "source_url": "https://www.cartesia.ai/customers/assort-health",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyuhvh500bdpj4cnoeh1hs7",
+      "company": "Molex",
+      "tool": "Celonis",
+      "source_url": "https://www.celonis.com/solutions/stories/molex-inventory-management",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur1aw8w002jta1os6cx9kso",
+      "company": "DXC",
+      "tool": "Claude",
+      "source_url": "https://claude.com/customers/dxc",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuri3u8z00dast1oz9rg0h1z",
+      "company": "Coverflex",
+      "tool": "Clay",
+      "source_url": "https://www.clay.com/customers/open-ai",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvf79y6a0048pp0c2ku4p0ku",
+      "company": "CloudTalk",
+      "tool": "CodeRabbit",
+      "source_url": "https://www.coderabbit.ai/case-studies/how-cloudtalk-built-coderabbit-into-its-multi-agent-development-workflow",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuz17ude01xjpy1oxi56pcbx",
+      "company": "Cosmo Energy",
+      "tool": "Cognite",
+      "source_url": "https://www.cognite.com/en/customers/cosmo",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "928fa83a-17c3-4e9c-afd2-69abd48e4fb0",
+      "company": "Draftwise",
+      "tool": "Cohere",
+      "source_url": "https://cohere.com/customer-stories/ada",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyi9qfh01xksg4chs96fnyj",
+      "company": "NatWest",
+      "tool": "Comet Opik",
+      "source_url": "https://www.comet.com/site/customers/natwest/",
+      "decision": "exclude",
+      "reason": "Evidence for the Comet platform without evidence of Opik use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyjzpsm008kpq4c4cvbn67e",
+      "company": "HitPay",
+      "tool": "ComplyAdvantage",
+      "source_url": "https://complyadvantage.com/customer-stories/hitpay-keeps-compliance-team-lean-while-managing-significant-growth/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrx4yg00pou11ozii7g1ue",
+      "company": "Boston Scientific",
+      "tool": "Coveo",
+      "source_url": "https://www.coveo.com/en/resources/case-studies/boston-scientific-new",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200,
+      "resolved_url": "https://www.coveo.com/en/resources"
+    },
+    {
+      "claim_id": "cmw0b35bz009mui0dzxkfhj6j",
+      "company": "HUMAN Security",
+      "tool": "Cyera",
+      "source_url": "https://www.cyera.com/customer-story/redefining-data-security-agentic-remediation-at-scale",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyqeo9h01eisg1om0jarnlw",
+      "company": "Hitachi Industrial Equipment Systems",
+      "tool": "DeepL",
+      "source_url": "https://www.deepl.com/en/customer-stories/hitachi-ies",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkib0jcd0006w5msbeuio5jl",
+      "company": "Atomicwork",
+      "tool": "DevRev",
+      "source_url": "https://devrev.ai/customers/bill",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 429
+    },
+    {
+      "claim_id": "cmvdp2qv700fvpg0cmnbdwy03",
+      "company": "Camino Financial",
+      "tool": "Dialpad",
+      "source_url": "https://www.dialpad.com/customers/camino-financial/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyk6i2m00u6pd1o1gpjn9nh",
+      "company": "Fortinet",
+      "tool": "Drata",
+      "source_url": "https://drata.com/customers/fortinet",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "abcb2d1a-cc68-476c-9e5b-1e991a5e8856",
+      "company": "Clay",
+      "tool": "Dust",
+      "source_url": "https://dust.tt/customers/clay-scaling-gtme-team",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwoiera008lsc1oop8obpg3",
+      "company": "Genspark",
+      "tool": "E2B",
+      "source_url": "https://e2b.dev/customers/genspark",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_adcb9b833ed8619de8f63dda",
+      "company": "AudioStack",
+      "tool": "ElevenLabs",
+      "source_url": "https://elevenlabs.io/blog/audiostack",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwd5qh06007luh4emwu4nnfy",
+      "company": "HockeyStack",
+      "tool": "Exa",
+      "source_url": "https://exa.ai/customers/hockeystack",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyoo0tf00hgsg1ogmbwqo2q",
+      "company": "HubSpot",
+      "tool": "Fellow",
+      "source_url": "https://fellow.ai/customers/hubspot",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuv8h13q00e7sn1ozvtrv7eg",
+      "company": "DUOTONE",
+      "tool": "Figma",
+      "source_url": "https://www.figma.com/customers/duotone-saves-hours/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_7f83b803d91f6b1fa61626e4",
+      "company": "Airful Consulting",
+      "tool": "Fireflies",
+      "source_url": "https://fireflies.ai/blog/airful-uses-fireflies-for-organizing-meeting-notes",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuykk6ri011lpd1ozb4r7pmu",
+      "company": "Base Power",
+      "tool": "FloQast",
+      "source_url": "https://www.floqast.com/stories/building-a-scalable-future-base-powers-accounting-transformation-using-floqast",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkib6wdk0013iems3izaf3g9",
+      "company": "V Digital Services",
+      "tool": "Frase",
+      "source_url": "https://www.frase.io/case-studies/v-digital-services-enterprise",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_2646c777b618ab972be90061",
+      "company": "Box",
+      "tool": "Gemini",
+      "source_url": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "4870ce67-d973-4f82-9d01-3b6fbc0ec0e3",
+      "company": "DBS",
+      "tool": "Glean",
+      "source_url": "https://www.glean.com/resources/customer-stories/dbs",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkcw9y8z002b04la7zcxyjjd",
+      "company": "Showpad",
+      "tool": "Gong",
+      "source_url": "https://www.gong.io/customers/case-studies/how-showpad-increased-quota-attainment-and-forecast-accuracy-with-gong-s-revenue-ai-os",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_963355cc96243042afebd140",
+      "company": "Bardon Insurance Group",
+      "tool": "Gradient AI",
+      "source_url": "https://www.gradientai.com/bardon-insurance-bolsters-medical-stop-loss-for-self-funded-employers-with-gradient-ai/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuygj9be010dsg4cq9dwyir0",
+      "company": "ArmadaHealth",
+      "tool": "H2O.ai",
+      "source_url": "https://h2o.ai/case-studies/armadahealth-h2o",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyiir42020esg4csqd8pev7",
+      "company": "DigiCert",
+      "tool": "Harness",
+      "source_url": "https://www.harness.io/case-studies/digicert",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwon6wq00gwpr1oyd6dnoov",
+      "company": "Chime",
+      "tool": "Hex",
+      "source_url": "https://hex.tech/customers/chime/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy2zy8o00tesh1o8h944yx2",
+      "company": "Calendly",
+      "tool": "Hightouch",
+      "source_url": "https://hightouch.com/customers/calendly",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_4b2a1584dce36ac8d3403ac3",
+      "company": "Jerome's Furniture",
+      "tool": "Horizon3.ai NodeZero",
+      "source_url": "https://horizon3.ai/customer-story/jeromes-furniture-compliance-to-real-security/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkibxx0u00l1fjms44i2cd47",
+      "company": "Doordash",
+      "tool": "HubSpot",
+      "source_url": "https://www.hubspot.com/case-studies/doordash",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuylgiky01k0pd1og69sh8s1",
+      "company": "Built",
+      "tool": "incident.io",
+      "source_url": "https://incident.io/customers/built",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuv0tq4400fuui1owfsluak9",
+      "company": "Atlassian",
+      "tool": "Intercom",
+      "source_url": "https://www.intercom.com/customers/atlassian",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuqttjao001ksk1otnqll7ao",
+      "company": "EmeraldX",
+      "tool": "Jasper",
+      "source_url": "https://www.jasper.ai/case-studies/cushman-wakefield",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmv2wh788005ask4c0019rz1v",
+      "company": "Anaheim Union High School District",
+      "tool": "Jotform",
+      "source_url": "https://www.jotform.com/customer-stories/anaheim-union-high-school-district/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuva87lm002bsx1oxwia1qsj",
+      "company": "Bracewell",
+      "tool": "Legora",
+      "source_url": "https://legora.com/customers/bracewell",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmvftbgkp00eos40c4da98k7m",
+      "company": "Cherry Bekaert",
+      "tool": "Loopio",
+      "source_url": "https://loopio.com/case-study/docusign-fuels-rfp-growth/",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": null
+    },
+    {
+      "claim_id": "rev_usage_021e985709618da807db6abc",
+      "company": "Adam",
+      "tool": "Make",
+      "source_url": "https://www.make.com/success-stories/czech-startup-adam-reduces-development-costs-with-make",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy3xyks00cit14c9mcalobm",
+      "company": "Catawiki",
+      "tool": "Metaview",
+      "source_url": "https://www.metaview.ai/customers/wall-of-love",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyzsopz01c9py1ok4r0itb3",
+      "company": "Climate Impact Partners",
+      "tool": "Mindtickle",
+      "source_url": "https://www.mindtickle.com/customer-stories/climate-impact-partners-increases-win-rates-with-mindtickle-digital-sales-rooms/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "c19baa43c856401mbc2jc9z7",
+      "company": "Axa",
+      "tool": "Mistral",
+      "source_url": "https://mistral.ai/customers/axa/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyvr5um014upj4cqxxdbry0",
+      "company": "At Home",
+      "tool": "Movable Ink",
+      "source_url": "https://movableink.com/case-studies/at-home-stores-achieves-18-more-clicks-with-a-loyalty-email-upgrade",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvaawtx0080pr1o4rms7pt6",
+      "company": "Consumers Energy",
+      "tool": "Moveworks",
+      "source_url": "https://www.moveworks.com/us/en/customers/consumers-energy-saves-money-with-moveworks-internal-communication-software",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuygpz2i0175sg4cxqp6mp9e",
+      "company": "Helical",
+      "tool": "Nebius AI Cloud",
+      "source_url": "https://nebius.com/customer-stories/helical",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyuymb700iapj1o3r2swz82",
+      "company": "OPmobility",
+      "tool": "Neural Concept",
+      "source_url": "https://www.neuralconcept.com/customer-stories/opmobility-neural-concept-ces-2025",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200,
+      "resolved_url": "https://www.neuralconcept.com/industry-stories/opmobility-neural-concept-ces-2025"
+    },
+    {
+      "claim_id": "cmuz37to900qzsh1ozdlv7ukk",
+      "company": "Catholic Health",
+      "tool": "Notable",
+      "source_url": "https://www.notablehealth.com/customer-stories/catholic-health",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyz7six014opy1o34wtupt3",
+      "company": "BetHog",
+      "tool": "Optimove",
+      "source_url": "https://www.optimove.com/resources/case-studies/bethog",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_c989c00108400452df8a0d33",
+      "company": "GoldPath",
+      "tool": "PathAI",
+      "source_url": "https://www.pathai.com/news/pathai-collaborates-with-goldpath-to-elevate-digital-pathology-capabilities-with-aisight-image-management-system",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmw5aqhtx0057us4e3fp53fwc",
+      "company": "Get Maine Lobster",
+      "tool": "Perplexity",
+      "source_url": "https://www.perplexity.ai/hub/customers/get-maine-lobster",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_ed53c4fd53b97d12f7a0cb5a",
+      "company": "American Express",
+      "tool": "Persado",
+      "source_url": "https://www.persado.com/company/press-releases/new-partnership-between-amperity-cdp-and-persado-signals-acceleration-of-the-next-era-of-personalization-for-data-driven-brands",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrlln400g4pv1obwznc4pa",
+      "company": "Decathlon",
+      "tool": "Photoroom",
+      "source_url": "https://www.photoroom.com/customer-stories/decathlon",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy4y0ru010zt14cjqkdx4p5",
+      "company": "BridgeBio Pharma",
+      "tool": "Prezent",
+      "source_url": "https://www.prezent.ai/case-studies/how-bridgebio-transformed-complex-data-into-clear-high-impact-presentations-fast",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyyr2hm010upe4cf4enlg7r",
+      "company": "Apartment List",
+      "tool": "Profound",
+      "source_url": "https://www.tryprofound.com/customers/apartment-list",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy3m8vs002bsg4cev8yp5k9",
+      "company": "Colabra",
+      "tool": "QA Wolf",
+      "source_url": "https://www.qawolf.com/customers/colabra",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyou6h1009epk4caj64xmyn",
+      "company": "Boys & Girls Clubs of San Francisco",
+      "tool": "Ramp",
+      "source_url": "https://ramp.com/customers/kidsclub",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuywlkm6003epe4c7e4129b4",
+      "company": "Assure Health",
+      "tool": "Regal",
+      "source_url": "https://www.regal.ai/case-study/assure-health",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy1r8je008kpp1oqpcco4sa",
+      "company": "Helix Electric",
+      "tool": "Replit",
+      "source_url": "https://replit.com/customers/helix-electric",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvb4cc500lqsx1ox1s71dlo",
+      "company": "Cents",
+      "tool": "Retell AI",
+      "source_url": "https://www.retellai.com/case-study/how-cents-transforms-laundry-operations-with-24-7-voice-automation",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmkbdzovq000804l5e1xu792w",
+      "company": "Descript",
+      "tool": "Retool",
+      "source_url": "https://retool.com/customers/descript",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyta65w00rppc4cqr8ka5xs",
+      "company": "Commercial",
+      "tool": "Rossum",
+      "source_url": "https://rossum.ai/customer-stories/commercial/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuuamuzc001qss1otu87tis7",
+      "company": "Kubota",
+      "tool": "Scribe",
+      "source_url": "https://scribe.com/customers/kubota",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyyhzlr00llpy1orb5hv601",
+      "company": "Runpod",
+      "tool": "Scrunch",
+      "source_url": "https://scrunch.com/case-studies/2025-07-how-runpod-leveraged-the-scrunch-ai-platform-to-achieve-4x-growth,-turning-chatgpt-into-a-top-performing-acquisition-channel-",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvw49qh002xpk1o96zrbl7l",
+      "company": "Carnival Corporation",
+      "tool": "SentinelOne",
+      "source_url": "https://www.sentinelone.com/customers/norwegian-airlines/?utm_source=https%3A%2F%2Fwww.sentinelone.com%2F&utm_medium=s1-site-referral",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 429
+    },
+    {
+      "claim_id": "cmwbr34sn00efud4eyfl9kuld",
+      "company": "Club Car",
+      "tool": "ServiceNow",
+      "source_url": "https://www.servicenow.com/customers/club-car.html",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmups63a500fpsuxv4uzbl8j9",
+      "company": "Capital on Tap",
+      "tool": "Sierra",
+      "source_url": "https://sierra.ai/customers/capital-on-tap",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyj2av4001gpd1opr2sv7fe",
+      "company": "Mollie",
+      "tool": "Snyk",
+      "source_url": "https://snyk.io/case-studies/mollie/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_76b12cc09c5bebdeb8a69be3",
+      "company": "Criteo",
+      "tool": "Sourcegraph",
+      "source_url": "https://sourcegraph.com/case-studies/criteo-tackles-big-code",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmwd5ox1a0068uh4etp3i74x7",
+      "company": "ConductorOne",
+      "tool": "Speakeasy",
+      "source_url": "https://www.speakeasy.com/customers/conductorone",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuynn1md02fwpd1oypiar1tc",
+      "company": "BeZero Carbon",
+      "tool": "SpotDraft",
+      "source_url": "https://www.spotdraft.com/customer-stories/bezero-carbon-powered-by-spotdraft",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_07c92785513c7fb681e824ed",
+      "company": "Bond Vet",
+      "tool": "Suki",
+      "source_url": "https://www.suki.ai/press-releases/suki-extends-the-capabilities-of-its-developer-platform-with-sdk-and-apis-to-power-voice-ai-experiences/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "7da5a1d6-1f16-4e70-b0cc-4d432407b15a",
+      "company": "Merck KGaA",
+      "tool": "Synthesia",
+      "source_url": "https://www.synthesia.io/case-studies/merck-kgaa",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutr6ika004mpv1ov0nseuz6",
+      "company": "Fortem",
+      "tool": "Talkdesk",
+      "source_url": "https://www.talkdesk.com/customers/cai/",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmjzgctjv00kp569kq7l58ntr",
+      "company": "Endeksa",
+      "tool": "Tidio",
+      "source_url": "https://www.tidio.com/customers/endeksa/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_e0deb54c11975f4c1e5ba4ee",
+      "company": "Regina Auto Body",
+      "tool": "Tractable",
+      "source_url": "https://tractable.ai/regina-auto-body/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuynabeq0293pd1ofenq0ptv",
+      "company": "Directions Credit Union",
+      "tool": "Unit21",
+      "source_url": "https://www.unit21.ai/customers/directions-credit-union",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy2jyye00olpp1ohnbcj7ez",
+      "company": "Duolingo",
+      "tool": "Vanta",
+      "source_url": "https://www.vanta.com/customers/duolingo",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmusb3hxy00otqt1on6p7o3pd",
+      "company": "Captur",
+      "tool": "Weights & Biases",
+      "source_url": "https://wandb.ai/site/customers/captur/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuy4op0a00josg4ch84hwl9n",
+      "company": "Steven Bartlett",
+      "tool": "Wispr Flow",
+      "source_url": "https://wisprflow.ai/case-study/steven-bartlett",
+      "decision": "exclude",
+      "reason": "Individual use without a company entity in the record",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmutrbo90007tpv1oruy3w4zh",
+      "company": "ClickUp",
+      "tool": "Zapier",
+      "source_url": "https://zapier.com/customer-stories/mercari",
+      "decision": "exclude",
+      "reason": "Different customer, generic destination, or related-story link only",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuys10fj007nsp4cc62zgdim",
+      "company": "Discover",
+      "tool": "Zip",
+      "source_url": "https://zip.com/customers/discover",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuyfcpoj00absg4cpipkxkzk",
+      "company": "Comfort Systems USA",
+      "tool": "Abnormal AI",
+      "source_url": "https://abnormal.ai/customers/love",
+      "decision": "exclude",
+      "reason": "Commentary, recommendation or tutorial without demonstrated use",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmupsbju000kqsuxv6s49s91y",
+      "company": "Lee Health",
+      "tool": "Abridge",
+      "source_url": "https://www.abridge.com/case-study/lee-health",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "rev_usage_27aebfc2ced9e9c29b91a5f4",
+      "company": "Disney",
+      "tool": "Adobe Firefly",
+      "source_url": "https://blog.adobe.com/en/publish/2026/01/22/adobe-partners-artists-power-new-era-media-entertainment-firefly-foundry",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuykeac500fzpq4cuipwzysi",
+      "company": "DataStax",
+      "tool": "Amplemarket",
+      "source_url": "https://www.amplemarket.com/customers/datastax",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmur32hso0168t61o5fovpzgo",
+      "company": "Taskrabbit",
+      "tool": "Attio",
+      "source_url": "https://attio.com/customers/taskrabbit",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuwo7nff005ppr1okbcn9xi5",
+      "company": "Kong",
+      "tool": "Augment Code",
+      "source_url": "https://www.augmentcode.com/customers/kong",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuvwg8lm007xsp1orqeajkbz",
+      "company": "Latent Health",
+      "tool": "Baseten",
+      "source_url": "https://www.baseten.co/resources/customers/latent-delivers-pharmaceutical-search-with-baseten/",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
+    },
+    {
+      "claim_id": "cmuypzji500y6pk4cqfrf8xie",
+      "company": "Balfour Beatty",
+      "tool": "Beamery",
+      "source_url": "https://beamery.com/resources/case-studies/balfour-beatty-transforms-its-talent-strategy-with-beamery",
+      "decision": "retain",
+      "reason": "Source documents use by the named entity",
+      "retrieval": "direct",
+      "http_status": 200
     }
   ]
 }
