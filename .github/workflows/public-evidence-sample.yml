@@ -23,6 +23,8 @@ jobs:
           python-version: '3.12'
       - name: Verify export guards
         run: python3 -m unittest discover -s scripts/datasets -p 'test_*.py'
+      - name: Refresh public tool inventory
+        run: python3 scripts/datasets/catalog_inventory.py
       - name: Collect public evidence
         run: python3 scripts/datasets/export_sample.py --output "$RUNNER_TEMP/usedby-sample"
       - uses: actions/upload-artifact@v4

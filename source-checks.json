@@ -1,5 +1,5 @@
 {
-  "scope": "First three hash-ordered records, checked 2026-11-12. Not a representative audit; HTTP success and name presence do not establish semantic validity.",
+  "scope": "Historical source checks from the first release. The exporter excludes the Weaviate URL while it redirects to a generic homepage.",
   "checks": [
     {
       "claim_id": "cmux8voev0063t31oznwsn1iv",

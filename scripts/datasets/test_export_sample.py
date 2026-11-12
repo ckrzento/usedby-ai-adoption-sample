@@ -5,7 +5,8 @@ import unittest
 from pathlib import Path
 from urllib.error import HTTPError
 
-from export_sample import extract, run, select, fetch
+from catalog_inventory import inventory
+from export_sample import extract, run, select, fetch, BLOCKED_SOURCES, render_card
 
 
 def response():
@@ -57,6 +58,32 @@ class SampleTests(unittest.TestCase):
         self.assertIsNone(rows[0]["source_published_at"])
         self.assertIsNone(rows[0]["last_verified_at"])
         self.assertNotIn("DO NOT REDISTRIBUTE", json.dumps(rows))
+
+    def test_catalog_balances_categories_before_filling_remaining_slots(self):
+        tools = [{"id": str(i), "slug": f"a-{i}", "category": {"slug": "a"},
+                  "mix": {"confirmed": i}} for i in range(102)]
+        tools.append({"id": "last", "slug": "b", "category": {"slug": "b"}, "mix": {"confirmed": 1}})
+        stream = json.dumps({"rows": tools}, separators=(",", ":"))
+        html = f"<script>self.__next_f.push([1,{json.dumps(stream)}])</script>"
+        result = inventory(html)
+        self.assertEqual(result["catalog_tools"], 103)
+        self.assertEqual(len(result["tools"]), 100)
+        self.assertEqual(result["tools"][:2], ["a-101", "b"])
+        self.assertNotIn("a-0", result["tools"])
+
+    def test_withdrawn_source_is_excluded(self):
+        payload = response()
+        payload["customers"]["listed"][0]["claim"]["source"]["url"] = next(iter(BLOCKED_SOURCES))
+        self.assertEqual(extract(payload, "synthetic-tool", "today"), ([], {"withdrawn_source": 1}))
+
+    def test_selection_covers_tools_and_prefers_fresh_records(self):
+        rows, _ = extract(response(), "synthetic-tool", "today")
+        fresh = rows[0]
+        stale = dict(fresh, claim_id="stale", company_slug="stale", proof_stale=True)
+        other = dict(fresh, claim_id="other", tool_slug="another-tool")
+        selected, _ = select([stale, other, fresh], 2)
+        self.assertEqual(selected, [other, fresh])
+        self.assertIn(json.dumps(other, indent=2), render_card("{{preview}}", selected))
 
     def test_exclusions(self):
         for kind in ("signal", "source", "date", "credentials"):
