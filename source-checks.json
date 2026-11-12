@@ -1,0 +1,35 @@
+{
+  "scope": "First three hash-ordered records, checked 2026-11-12. Not a representative audit; HTTP success and name presence do not establish semantic validity.",
+  "checks": [
+    {
+      "claim_id": "cmux8voev0063t31oznwsn1iv",
+      "company": "Weaviate",
+      "source_url": "https://www.patronus.ai/case-studies/weaviate-leverages-patronus-percival-to-accelerate-complex-ai-agent-development",
+      "checked_at": "2026-11-12T12:04:42.141088+00:00",
+      "status": 200,
+      "final_url": "https://www.patronus.ai/",
+      "company_name_in_html": false,
+      "check_scope": "HTTP availability and literal company name in HTML; not semantic evidence verification"
+    },
+    {
+      "claim_id": "cmuyfbpg9008msg4ctxd4mfep",
+      "company": "TaylorMade",
+      "source_url": "https://abnormal.ai/customers/love",
+      "checked_at": "2026-11-12T12:04:42.141680+00:00",
+      "status": 200,
+      "final_url": "https://abnormal.ai/customers/love",
+      "company_name_in_html": true,
+      "check_scope": "HTTP availability and literal company name in HTML; not semantic evidence verification"
+    },
+    {
+      "claim_id": "cmuygpt5p0165sg4coy05w81w",
+      "company": "Antioch",
+      "source_url": "https://nebius.com/customer-stories/antioch",
+      "checked_at": "2026-11-12T12:04:42.141766+00:00",
+      "status": 200,
+      "final_url": "https://nebius.com/customer-stories/antioch",
+      "company_name_in_html": true,
+      "check_scope": "HTTP availability and literal company name in HTML; not semantic evidence verification"
+    }
+  ]
+}
