@@ -216,17 +216,17 @@
   "population": "First 100 public API rows for each fixed inventory tool",
   "rows_read": 4588,
   "eligible_unique_pairs": 2611,
-  "sample_rows": 449,
+  "sample_rows": 500,
   "requested_maximum": 500,
   "excluded": {
     "not_confirmed": 1977
   },
   "deduplication": "Exact tool_slug/company_slug pair; conflicting pairs or claim IDs fail",
-  "selection": "Round-robin by tool; non-stale first, then newest proof check, then company slug; then exclude unsupported rows following source review, without backfill",
+  "selection": "Round-robin by tool; non-stale first, then newest proof check, then company slug; then exclude unsupported rows following source review. Add 51 new pairs after direct primary-source review.",
   "selection_bias": "Category-balanced catalog subset; public evidence only; first-page proof-strength ordering; CONFIRMED with public source and check date only. Not representative of adoption or market share.",
   "freshness": "Per-row checked/verified/captured dates; collected_at is retrieval, not verification. No global transactional snapshot.",
   "license": "CC-BY-4.0",
-  "data_sha256": "b1bf823536b0a1f3644cf78de7ba542c6001acfab362407aefe472cbcd42bfe8",
+  "data_sha256": "49994603fa6c6b9745aebbd14871702421372dac2cbf70b4ad74baa97cc675d0",
   "receipts": [
     {
       "tool_slug": "abnormal-ai",
@@ -1623,10 +1623,33 @@
   ],
   "source_review": {
     "review_date": "2026-11-12",
-    "reviewed_rows": 500,
-    "distinct_urls": 472,
-    "retained": 449,
+    "reviewed_rows": 551,
+    "distinct_urls": 523,
+    "retained": 500,
     "excluded": 51,
-    "input_sha256": "684def94f0da732f1a9d1c93da09175f4328338086f2a8e10b6ae198a4e405d2"
+    "original_input_sha256": "684def94f0da732f1a9d1c93da09175f4328338086f2a8e10b6ae198a4e405d2"
+  },
+  "backfill": {
+    "previous_release_sha256": "b1bf823536b0a1f3644cf78de7ba542c6001acfab362407aefe472cbcd42bfe8",
+    "rows_added": 51,
+    "tools": [
+      "baseten",
+      "braintrust",
+      "clay",
+      "coderabbit",
+      "cursor",
+      "dust",
+      "exa",
+      "glean",
+      "perplexity",
+      "photoroom",
+      "replit",
+      "sierra",
+      "synthesia",
+      "vanta"
+    ],
+    "source": "Public tool customer API, first 100 rows. Non-stale candidates with identifiable company source URLs. Original inventory and receipts above describe the initial collection. See source-checks.json for reviewed additions.",
+    "collected_from": "2026-11-12T14:57:53.219948+00:00",
+    "collected_through": "2026-11-12T14:58:47.198105+00:00"
   }
 }
