@@ -16,7 +16,7 @@ pretty_name: usedby public AI adoption sample
 
 Use this dataset to find a documented example of a company using an AI tool. Each row links the company and tool to a usedby claim and its original public source.
 
-**449 relationships · 99 tools · 419 companies**
+**500 relationships · 100 tools · 463 companies**
 
 Example: **Intercom** and **Claude**. [Public claim](https://www.usedby.ai/claims/cmjzggc8c00rn569kaflxnkkp) · [Original source](https://www.intercom.com/blog/fin-2-powered-by-anthropic-claude-llm).
 
@@ -45,16 +45,16 @@ Example: **Intercom** and **Claude**. [Public claim](https://www.usedby.ai/claim
 
 | Tool | Rows |
 | --- | ---: |
-| [Abridge](https://www.usedby.ai/tools/abridge) | 6 |
-| [Adobe Firefly](https://www.usedby.ai/tools/adobe-firefly) | 6 |
-| [Amplemarket](https://www.usedby.ai/tools/amplemarket) | 6 |
-| [Attio](https://www.usedby.ai/tools/attio) | 6 |
-| [Augment Code](https://www.usedby.ai/tools/augment-code) | 6 |
-| [Baseten](https://www.usedby.ai/tools/baseten) | 6 |
-| [Beamery](https://www.usedby.ai/tools/beamery) | 6 |
-| [Beautiful.ai](https://www.usedby.ai/tools/beautiful) | 5 |
-| [Braintrust](https://www.usedby.ai/tools/braintrust) | 5 |
-| [Canva](https://www.usedby.ai/tools/canva) | 5 |
+| [Baseten](https://www.usedby.ai/tools/baseten) | 10 |
+| [CodeRabbit](https://www.usedby.ai/tools/coderabbit) | 9 |
+| [Dust](https://www.usedby.ai/tools/dust) | 9 |
+| [Exa](https://www.usedby.ai/tools/exa) | 9 |
+| [Glean](https://www.usedby.ai/tools/glean) | 9 |
+| [Synthesia](https://www.usedby.ai/tools/synthesia) | 9 |
+| [Perplexity](https://www.usedby.ai/tools/perplexity) | 8 |
+| [Photoroom](https://www.usedby.ai/tools/photoroom) | 8 |
+| [Vanta](https://www.usedby.ai/tools/vanta) | 8 |
+| [Braintrust](https://www.usedby.ai/tools/braintrust) | 7 |
 
 ## How the sample is built
 
@@ -62,7 +62,7 @@ The exporter starts from the [public tool directory](https://www.usedby.ai/tools
 
 The sample takes one relationship per tool each round, in tool slug order, up to 500 rows. Each tool contributes its non-stale records first, then its most recently checked records. Company slug breaks ties. The [manifest](https://github.com/ckrzento/usedby-ai-adoption-sample/blob/main/manifest.json) records the inventory, response hashes, counts and collection times.
 
-The November 12 release reviewed all 500 candidate relationships (472 distinct source URLs). It retains 449 records after source review. See the [row-by-row decisions](https://github.com/ckrzento/usedby-ai-adoption-sample/blob/main/source-checks.json).
+The initial audit retained 449 of 500 relationships. A second collection added 51 new pairs with directly checked primary sources. Each addition has a short description of the documented use in the [review log](https://github.com/ckrzento/usedby-ai-adoption-sample/blob/main/source-checks.json).
 
 ## Interpretation
 
