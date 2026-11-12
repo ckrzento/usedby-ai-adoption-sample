@@ -1,0 +1,33 @@
+name: Public evidence sample (review artifact)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '19 7 3 * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-evidence-sample
+  cancel-in-progress: false
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify export guards
+        run: python3 -m unittest discover -s scripts/datasets -p 'test_*.py'
+      - name: Collect public evidence
+        run: python3 scripts/datasets/export_sample.py --output "$RUNNER_TEMP/usedby-sample"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: usedby-public-evidence-${{ github.run_id }}
+          path: ${{ runner.temp }}/usedby-sample
+          if-no-files-found: error
+          retention-days: 30

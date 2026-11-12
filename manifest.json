@@ -1,0 +1,948 @@
+{
+  "schema_version": 1,
+  "collection_started_at": "2026-11-12T12:00:14.072870+00:00",
+  "collection_finished_at": "2026-11-12T12:03:43.153098+00:00",
+  "inventory": {
+    "selection": "Public tool search q=ai, limit=100, retrieved 2026-11-12. Name/category match; not a complete AI tool catalog.",
+    "tools": [
+      "abacus-ai",
+      "abnormal-ai",
+      "adcreative",
+      "aidoc",
+      "airops",
+      "airtable",
+      "arize-ai",
+      "assembly-ai",
+      "auditoria-ai",
+      "beautiful",
+      "bland-ai",
+      "bretton-ai",
+      "browse-ai",
+      "c3-ai",
+      "checkfile-ai",
+      "contextual-ai",
+      "copy-ai",
+      "credo-ai",
+      "day-ai",
+      "dropzone-ai",
+      "fiddler-ai",
+      "fireworks-ai",
+      "fyxer-ai",
+      "gradient-ai",
+      "h2o-ai",
+      "hippocratic-ai",
+      "horizon3-ai",
+      "kore-ai",
+      "leena-ai",
+      "leonardo-ai",
+      "level-ai",
+      "mindset",
+      "napkin-ai",
+      "nebius",
+      "norm-ai",
+      "observe-ai",
+      "palantir-aip",
+      "patronus-ai",
+      "peec-ai",
+      "prisma-ai-runtime-security",
+      "quiver-ai",
+      "qure-ai",
+      "read-ai",
+      "recall",
+      "regie",
+      "relevance-ai",
+      "resemble",
+      "restb-ai",
+      "retell-ai",
+      "sakana-ai",
+      "sapia-ai",
+      "scale-ai",
+      "siena-ai",
+      "snorkel-ai",
+      "together-ai",
+      "typesafe-ai",
+      "vectra-ai",
+      "vic-ai",
+      "viz-ai",
+      "yellow-ai",
+      "zendesk-ai",
+      "zest"
+    ]
+  },
+  "population": "First 100 public API rows for each fixed inventory tool",
+  "rows_read": 1409,
+  "eligible_unique_pairs": 473,
+  "sample_rows": 473,
+  "requested_maximum": 500,
+  "excluded": {
+    "not_confirmed": 936
+  },
+  "deduplication": "Exact tool_slug/company_slug pair; conflicting pairs or claim IDs fail",
+  "selection": "Lowest SHA-256(tool_slug/company_slug), at most requested_maximum",
+  "selection_bias": "Name/category query seed; public evidence only; first-page proof-strength ordering; CONFIRMED with public source and check date only. Not representative of adoption or market share.",
+  "freshness": "Per-row checked/verified/captured dates; collected_at is retrieval, not verification. No global transactional snapshot.",
+  "data_sha256": "2e60234a91f1c5a574a320346026d4aa1e2738a003ee8aaa62f7264f8fd5faa6",
+  "receipts": [
+    {
+      "tool_slug": "abacus-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/abacus-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:15.260253+00:00",
+      "sha256": "ad656138f113f78fc95b63bb80450c38b108980b937eddfa108307031809288a",
+      "api_snapshot": "2026-11-12T11:56:38.211Z",
+      "public_total": 19,
+      "rows_read": 19,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 19
+      }
+    },
+    {
+      "tool_slug": "abnormal-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/abnormal-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:18.157140+00:00",
+      "sha256": "ee59c5d65d8f3ea6b0f42f88a78c71242da867af347a66cf70b976048b8a9d8b",
+      "api_snapshot": "2026-11-12T11:56:41.658Z",
+      "public_total": 43,
+      "rows_read": 43,
+      "truncated": false,
+      "eligible_rows": 25,
+      "excluded": {
+        "not_confirmed": 18
+      }
+    },
+    {
+      "tool_slug": "adcreative",
+      "url": "https://www.usedby.ai/api/v1/tools/adcreative/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:20.939629+00:00",
+      "sha256": "86ad711a76e07021f752563c32e9e1fad9a1207d4e2454860cbfbac8c458dca0",
+      "api_snapshot": "2026-11-12T11:56:46.606Z",
+      "public_total": 26,
+      "rows_read": 26,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 26
+      }
+    },
+    {
+      "tool_slug": "aidoc",
+      "url": "https://www.usedby.ai/api/v1/tools/aidoc/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:23.708518+00:00",
+      "sha256": "805ae9c510603803ab9f816b0cfbb10783bd233d095dc0547a1125f8ca7194dc",
+      "api_snapshot": "2026-11-12T11:56:49.930Z",
+      "public_total": 15,
+      "rows_read": 15,
+      "truncated": false,
+      "eligible_rows": 6,
+      "excluded": {
+        "not_confirmed": 9
+      }
+    },
+    {
+      "tool_slug": "airops",
+      "url": "https://www.usedby.ai/api/v1/tools/airops/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:26.630244+00:00",
+      "sha256": "3209d9a639db6ee8057bcd99acad027c26851554ae0e1d4466d6aed5676a1ad9",
+      "api_snapshot": "2026-11-12T11:56:53.301Z",
+      "public_total": 39,
+      "rows_read": 39,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 39
+      }
+    },
+    {
+      "tool_slug": "airtable",
+      "url": "https://www.usedby.ai/api/v1/tools/airtable/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:29.419832+00:00",
+      "sha256": "89db62be35b4b0a3cdc3d9214fed229a493b67f0839a517a19c30d14f080a03a",
+      "api_snapshot": "2026-11-12T11:56:56.676Z",
+      "public_total": 37,
+      "rows_read": 37,
+      "truncated": false,
+      "eligible_rows": 14,
+      "excluded": {
+        "not_confirmed": 23
+      }
+    },
+    {
+      "tool_slug": "arize-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/arize-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:32.305377+00:00",
+      "sha256": "d190a62cc2fe87c9d2a2aab8e8d8900f925977a013380a32ff9febdaf5e271a3",
+      "api_snapshot": "2026-11-12T11:57:00.178Z",
+      "public_total": 32,
+      "rows_read": 32,
+      "truncated": false,
+      "eligible_rows": 9,
+      "excluded": {
+        "not_confirmed": 23
+      }
+    },
+    {
+      "tool_slug": "assembly-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/assembly-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:35.237476+00:00",
+      "sha256": "e24ca2e908a4166c782111f6fb8ce97c4c2dcc4508462771a61dbbb91587c293",
+      "api_snapshot": "2026-11-12T11:57:03.449Z",
+      "public_total": 64,
+      "rows_read": 64,
+      "truncated": false,
+      "eligible_rows": 21,
+      "excluded": {
+        "not_confirmed": 43
+      }
+    },
+    {
+      "tool_slug": "auditoria-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/auditoria-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:38.070918+00:00",
+      "sha256": "17e8fc0d2dd718a1b01521d87ebdf7a63a3c742c124984391b00c90241d4ad2a",
+      "api_snapshot": "2026-11-12T11:57:06.839Z",
+      "public_total": 18,
+      "rows_read": 18,
+      "truncated": false,
+      "eligible_rows": 7,
+      "excluded": {
+        "not_confirmed": 11
+      }
+    },
+    {
+      "tool_slug": "beautiful",
+      "url": "https://www.usedby.ai/api/v1/tools/beautiful/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:40.953334+00:00",
+      "sha256": "6465613fe46ea3ea43ba55c9a7a2526e1a0e7e57155a8ac2733f1d0bd5564c2c",
+      "api_snapshot": "2026-11-12T11:57:10.712Z",
+      "public_total": 36,
+      "rows_read": 36,
+      "truncated": false,
+      "eligible_rows": 21,
+      "excluded": {
+        "not_confirmed": 15
+      }
+    },
+    {
+      "tool_slug": "bland-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/bland-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:43.749176+00:00",
+      "sha256": "6ca5bcada616e8d61207853385b8057cacefefed6bd563bcd78780e6b18bfe32",
+      "api_snapshot": "2026-11-12T11:57:14.947Z",
+      "public_total": 24,
+      "rows_read": 24,
+      "truncated": false,
+      "eligible_rows": 13,
+      "excluded": {
+        "not_confirmed": 11
+      }
+    },
+    {
+      "tool_slug": "bretton-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/bretton-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:46.996125+00:00",
+      "sha256": "87df8eacee1e9ef336e082c7a625ec426fc9198beb7adc6355566f1fc2c68e12",
+      "api_snapshot": "2026-11-12T11:57:18.216Z",
+      "public_total": 17,
+      "rows_read": 17,
+      "truncated": false,
+      "eligible_rows": 6,
+      "excluded": {
+        "not_confirmed": 11
+      }
+    },
+    {
+      "tool_slug": "browse-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/browse-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:50.130254+00:00",
+      "sha256": "75e7f9653ade19a9ff530095890e1d9958ac96c84ddafe0b9781ffa76d1e76ed",
+      "api_snapshot": "2026-11-12T11:57:21.483Z",
+      "public_total": 10,
+      "rows_read": 10,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 10
+      }
+    },
+    {
+      "tool_slug": "c3-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/c3-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:53.027402+00:00",
+      "sha256": "a7056f474c5270ab74c621b9ea8d7e46a0786fbcaca9041652e229e460ef55a8",
+      "api_snapshot": "2026-11-12T11:57:24.860Z",
+      "public_total": 47,
+      "rows_read": 47,
+      "truncated": false,
+      "eligible_rows": 9,
+      "excluded": {
+        "not_confirmed": 38
+      }
+    },
+    {
+      "tool_slug": "checkfile-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/checkfile-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:55.689738+00:00",
+      "sha256": "f8b9025fb2360b24cf583b50d4673ee4a135a11fcff3d355399b5c8cecaa70f2",
+      "api_snapshot": "2026-11-12T11:57:27.972Z",
+      "public_total": 0,
+      "rows_read": 0,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {}
+    },
+    {
+      "tool_slug": "contextual-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/contextual-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:00:58.520824+00:00",
+      "sha256": "a342b165bf0ab9655f0aaa007dfb77473ee557bfe459dc9333da49f38d899119",
+      "api_snapshot": "2026-11-12T11:57:31.197Z",
+      "public_total": 7,
+      "rows_read": 7,
+      "truncated": false,
+      "eligible_rows": 3,
+      "excluded": {
+        "not_confirmed": 4
+      }
+    },
+    {
+      "tool_slug": "copy-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/copy-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:01.243029+00:00",
+      "sha256": "5d0400f6f3c7cf597ca2cb8f5f9edd7a03e9431152ccd0c1d0b1c3f564087f04",
+      "api_snapshot": "2026-11-12T11:57:34.353Z",
+      "public_total": 11,
+      "rows_read": 11,
+      "truncated": false,
+      "eligible_rows": 3,
+      "excluded": {
+        "not_confirmed": 8
+      }
+    },
+    {
+      "tool_slug": "credo-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/credo-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:03.988684+00:00",
+      "sha256": "b34b6c4e306254d288a9467d9d48e3fc6e7f8cd3a16d31cd5efab922181f70f1",
+      "api_snapshot": "2026-11-12T11:57:37.581Z",
+      "public_total": 17,
+      "rows_read": 17,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 17
+      }
+    },
+    {
+      "tool_slug": "day-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/day-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:06.688720+00:00",
+      "sha256": "de53909ffd98935864b598bb7bfb45a58b087b64fc97905dec58cebc8cfef38d",
+      "api_snapshot": "2026-11-12T11:57:40.887Z",
+      "public_total": 10,
+      "rows_read": 10,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 10
+      }
+    },
+    {
+      "tool_slug": "dropzone-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/dropzone-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:09.532242+00:00",
+      "sha256": "7a0f8157665ba623c1084765dc0b46b32d99dabdb8a136205fa63a18fde4f30a",
+      "api_snapshot": "2026-11-12T11:57:44.284Z",
+      "public_total": 8,
+      "rows_read": 8,
+      "truncated": false,
+      "eligible_rows": 6,
+      "excluded": {
+        "not_confirmed": 2
+      }
+    },
+    {
+      "tool_slug": "fiddler-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/fiddler-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:12.254007+00:00",
+      "sha256": "d9569332a028f290d0082659775ec54e924ff5efb0b9d589d5df627bed6bf61d",
+      "api_snapshot": "2026-11-12T11:57:47.778Z",
+      "public_total": 11,
+      "rows_read": 11,
+      "truncated": false,
+      "eligible_rows": 3,
+      "excluded": {
+        "not_confirmed": 8
+      }
+    },
+    {
+      "tool_slug": "fireworks-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/fireworks-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:15.076616+00:00",
+      "sha256": "89d15af4479143bc889061239f254190e65d80fd11d35d1c3c2db9b999d0100c",
+      "api_snapshot": "2026-11-12T11:57:51.018Z",
+      "public_total": 48,
+      "rows_read": 48,
+      "truncated": false,
+      "eligible_rows": 14,
+      "excluded": {
+        "not_confirmed": 34
+      }
+    },
+    {
+      "tool_slug": "fyxer-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/fyxer-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:17.801230+00:00",
+      "sha256": "2826a4d6281a83aae1e20456e886e8ce4ef78a39cfa14c433de0a062aff2ffb9",
+      "api_snapshot": "2026-11-12T11:57:54.515Z",
+      "public_total": 15,
+      "rows_read": 15,
+      "truncated": false,
+      "eligible_rows": 6,
+      "excluded": {
+        "not_confirmed": 9
+      }
+    },
+    {
+      "tool_slug": "gradient-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/gradient-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:20.627252+00:00",
+      "sha256": "53eed888cf7a7271a7e32c38bb623f6edb3ddd8d1676109bf2735cc24bfb9527",
+      "api_snapshot": "2026-11-12T11:57:57.729Z",
+      "public_total": 19,
+      "rows_read": 19,
+      "truncated": false,
+      "eligible_rows": 17,
+      "excluded": {
+        "not_confirmed": 2
+      }
+    },
+    {
+      "tool_slug": "h2o-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/h2o-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:23.480352+00:00",
+      "sha256": "ef5757b860e9e9e79de9c8351ffa14739137ff8d70a03a2aba8213fc40dfb8e1",
+      "api_snapshot": "2026-11-12T11:58:01.466Z",
+      "public_total": 53,
+      "rows_read": 53,
+      "truncated": false,
+      "eligible_rows": 43,
+      "excluded": {
+        "not_confirmed": 10
+      }
+    },
+    {
+      "tool_slug": "hippocratic-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/hippocratic-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:26.403161+00:00",
+      "sha256": "e609d277e732f0ad399cf7ee2900da676054cde2e777da67e3c0e0bfb9a04166",
+      "api_snapshot": "2026-11-12T11:58:04.943Z",
+      "public_total": 48,
+      "rows_read": 48,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 48
+      }
+    },
+    {
+      "tool_slug": "horizon3-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/horizon3-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:30.577518+00:00",
+      "sha256": "af82e3d165aa70a9a45570f1cd8c95f85c8e8abfc0342931284d6b7ca31ae398",
+      "api_snapshot": "2026-11-12T12:01:30.332Z",
+      "public_total": 11,
+      "rows_read": 11,
+      "truncated": false,
+      "eligible_rows": 11,
+      "excluded": {}
+    },
+    {
+      "tool_slug": "kore-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/kore-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:34.516930+00:00",
+      "sha256": "7623d6888163334fdd0c94a8a2994d84fadddf554b2a429d77276844bff9b265",
+      "api_snapshot": "2026-11-12T12:01:34.285Z",
+      "public_total": 23,
+      "rows_read": 23,
+      "truncated": false,
+      "eligible_rows": 2,
+      "excluded": {
+        "not_confirmed": 21
+      }
+    },
+    {
+      "tool_slug": "leena-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/leena-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:38.601041+00:00",
+      "sha256": "5b5adc292b4446b465e92f2dab14397a8b066ae711bc5bb0264dedb370ba91ca",
+      "api_snapshot": "2026-11-12T12:01:38.063Z",
+      "public_total": 50,
+      "rows_read": 50,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 50
+      }
+    },
+    {
+      "tool_slug": "leonardo-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/leonardo-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:42.060116+00:00",
+      "sha256": "83fb12bb5c99cb89890382f30871ead7fd2cfbe4854461e2b43bc34b1606dfc6",
+      "api_snapshot": "2026-11-12T12:01:41.898Z",
+      "public_total": 6,
+      "rows_read": 6,
+      "truncated": false,
+      "eligible_rows": 4,
+      "excluded": {
+        "not_confirmed": 2
+      }
+    },
+    {
+      "tool_slug": "level-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/level-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:45.880850+00:00",
+      "sha256": "ac7c5154bf36801c96829208aa512b280306bf24c7732da97b80c810956a4197",
+      "api_snapshot": "2026-11-12T12:01:45.621Z",
+      "public_total": 20,
+      "rows_read": 20,
+      "truncated": false,
+      "eligible_rows": 13,
+      "excluded": {
+        "not_confirmed": 7
+      }
+    },
+    {
+      "tool_slug": "mindset",
+      "url": "https://www.usedby.ai/api/v1/tools/mindset/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:49.538691+00:00",
+      "sha256": "54d484c4ded6090fec4f0befd6a4350398f2de74d68a6f1c6282f93e730f3690",
+      "api_snapshot": "2026-11-12T12:01:49.321Z",
+      "public_total": 17,
+      "rows_read": 17,
+      "truncated": false,
+      "eligible_rows": 10,
+      "excluded": {
+        "not_confirmed": 7
+      }
+    },
+    {
+      "tool_slug": "napkin-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/napkin-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:54.943176+00:00",
+      "sha256": "6705f72301fdd1bb6e13728963cd119793d91f913f9f0f132d21255dc3f9923b",
+      "api_snapshot": "2026-11-12T12:01:54.832Z",
+      "public_total": 0,
+      "rows_read": 0,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {}
+    },
+    {
+      "tool_slug": "nebius",
+      "url": "https://www.usedby.ai/api/v1/tools/nebius/customers?limit=100",
+      "collected_at": "2026-11-12T12:01:59.005669+00:00",
+      "sha256": "e8b3cafc2603d7cf852040b1de2af3464c90925e956a9384d3c7b6261498798f",
+      "api_snapshot": "2026-11-12T12:01:58.563Z",
+      "public_total": 51,
+      "rows_read": 51,
+      "truncated": false,
+      "eligible_rows": 31,
+      "excluded": {
+        "not_confirmed": 20
+      }
+    },
+    {
+      "tool_slug": "norm-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/norm-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:02.791586+00:00",
+      "sha256": "8143ad3388168a533f124f5ad6d2ca5a9465510f3a59c691090d748c3bb70165",
+      "api_snapshot": "2026-11-12T12:02:02.642Z",
+      "public_total": 7,
+      "rows_read": 7,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 7
+      }
+    },
+    {
+      "tool_slug": "observe-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/observe-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:06.691895+00:00",
+      "sha256": "6124fe41f8c5948a9ae5f657d0af4e825c372fdbca12a567757d29fabf825a71",
+      "api_snapshot": "2026-11-12T12:02:06.404Z",
+      "public_total": 27,
+      "rows_read": 27,
+      "truncated": false,
+      "eligible_rows": 21,
+      "excluded": {
+        "not_confirmed": 6
+      }
+    },
+    {
+      "tool_slug": "palantir-aip",
+      "url": "https://www.usedby.ai/api/v1/tools/palantir-aip/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:10.598097+00:00",
+      "sha256": "3be276a5636ec23acd49a59818ba1addd393092a9c1fc27190654cba2d632685",
+      "api_snapshot": "2026-11-12T12:02:10.308Z",
+      "public_total": 28,
+      "rows_read": 28,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 28
+      }
+    },
+    {
+      "tool_slug": "patronus-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/patronus-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:14.690266+00:00",
+      "sha256": "aa7cd390ebb1a653d2440a303e80ca512f41906197df157d3b86792da718c16c",
+      "api_snapshot": "2026-11-12T12:02:14.532Z",
+      "public_total": 7,
+      "rows_read": 7,
+      "truncated": false,
+      "eligible_rows": 4,
+      "excluded": {
+        "not_confirmed": 3
+      }
+    },
+    {
+      "tool_slug": "peec-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/peec-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:18.385272+00:00",
+      "sha256": "5506cd1ff5e9019b512e9d44e97bf91566a92639987ebd8d0cba06cf75d8e3bb",
+      "api_snapshot": "2026-11-12T12:02:18.152Z",
+      "public_total": 23,
+      "rows_read": 23,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 23
+      }
+    },
+    {
+      "tool_slug": "prisma-ai-runtime-security",
+      "url": "https://www.usedby.ai/api/v1/tools/prisma-ai-runtime-security/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:21.976269+00:00",
+      "sha256": "e460c312b9cde7467b4085180d7741a915dd194aabab1d8dbb6f76af205f3f74",
+      "api_snapshot": "2026-11-12T12:02:21.765Z",
+      "public_total": 9,
+      "rows_read": 9,
+      "truncated": false,
+      "eligible_rows": 1,
+      "excluded": {
+        "not_confirmed": 8
+      }
+    },
+    {
+      "tool_slug": "quiver-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/quiver-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:25.294161+00:00",
+      "sha256": "7b0c7a6dc91ac1ba4c77c6b3d6905f3d1d5e1bfbb765670669ffe43145169e69",
+      "api_snapshot": "2026-11-12T12:02:25.173Z",
+      "public_total": 6,
+      "rows_read": 6,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 6
+      }
+    },
+    {
+      "tool_slug": "qure-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/qure-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:28.887810+00:00",
+      "sha256": "fc5edb24ff9f20bd57d2321989da779c7a4680a36b80394164a47359471492ab",
+      "api_snapshot": "2026-11-12T12:02:28.685Z",
+      "public_total": 14,
+      "rows_read": 14,
+      "truncated": false,
+      "eligible_rows": 6,
+      "excluded": {
+        "not_confirmed": 8
+      }
+    },
+    {
+      "tool_slug": "read-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/read-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:32.495889+00:00",
+      "sha256": "b523621f00ed885e66ae0703d16060fac0ffcf057f30fe8651a00b4704ce855a",
+      "api_snapshot": "2026-11-12T12:02:32.237Z",
+      "public_total": 15,
+      "rows_read": 15,
+      "truncated": false,
+      "eligible_rows": 1,
+      "excluded": {
+        "not_confirmed": 14
+      }
+    },
+    {
+      "tool_slug": "recall",
+      "url": "https://www.usedby.ai/api/v1/tools/recall/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:36.362911+00:00",
+      "sha256": "610c8bfd64054bdd4049501efd0b76337113420f15990c5be0b3d8804a776bcd",
+      "api_snapshot": "2026-11-12T12:02:36.031Z",
+      "public_total": 51,
+      "rows_read": 51,
+      "truncated": false,
+      "eligible_rows": 25,
+      "excluded": {
+        "not_confirmed": 26
+      }
+    },
+    {
+      "tool_slug": "regie",
+      "url": "https://www.usedby.ai/api/v1/tools/regie/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:39.991283+00:00",
+      "sha256": "9c9b7641f3953f1e75443d2386f11fc658b7a4afaa21a3effb899faca3a09aeb",
+      "api_snapshot": "2026-11-12T12:02:39.799Z",
+      "public_total": 12,
+      "rows_read": 12,
+      "truncated": false,
+      "eligible_rows": 4,
+      "excluded": {
+        "not_confirmed": 8
+      }
+    },
+    {
+      "tool_slug": "relevance-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/relevance-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:44.105605+00:00",
+      "sha256": "1dbf6c605cd8e39761d752c9670c6e8671357f7fde17241cd98a17e8ec92d27b",
+      "api_snapshot": "2026-11-12T12:02:43.849Z",
+      "public_total": 14,
+      "rows_read": 14,
+      "truncated": false,
+      "eligible_rows": 8,
+      "excluded": {
+        "not_confirmed": 6
+      }
+    },
+    {
+      "tool_slug": "resemble",
+      "url": "https://www.usedby.ai/api/v1/tools/resemble/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:47.712676+00:00",
+      "sha256": "83819dfd9dea0def2363bb3a3006ef9fa1df9d4bb4411e5f82192949c53794af",
+      "api_snapshot": "2026-11-12T12:02:47.490Z",
+      "public_total": 18,
+      "rows_read": 18,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 18
+      }
+    },
+    {
+      "tool_slug": "restb-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/restb-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:51.129066+00:00",
+      "sha256": "b2652a959b7961dc3a8d4118b1a3cb566e3a8bfc5add6ae419c16f4211109860",
+      "api_snapshot": "2026-11-12T12:02:51.055Z",
+      "public_total": 0,
+      "rows_read": 0,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {}
+    },
+    {
+      "tool_slug": "retell-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/retell-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:54.675014+00:00",
+      "sha256": "06d3546d410a594435c17edec502b5959ccbc8ae67bce4ca61c7fe1f8735dc39",
+      "api_snapshot": "2026-11-12T12:02:54.391Z",
+      "public_total": 35,
+      "rows_read": 35,
+      "truncated": false,
+      "eligible_rows": 14,
+      "excluded": {
+        "not_confirmed": 21
+      }
+    },
+    {
+      "tool_slug": "sakana-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/sakana-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:02:58.313875+00:00",
+      "sha256": "4ecf83fdabec664cbfef8bc7f84cc868d4bc952ccb01616280fbd0ee721c08e6",
+      "api_snapshot": "2026-11-12T12:02:58.224Z",
+      "public_total": 4,
+      "rows_read": 4,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 4
+      }
+    },
+    {
+      "tool_slug": "sapia-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/sapia-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:01.877559+00:00",
+      "sha256": "3430cf8c0c82b4d868712624267669bb4b8c354c27a391cc6d9eb9c54ce0d1dd",
+      "api_snapshot": "2026-11-12T12:03:01.670Z",
+      "public_total": 17,
+      "rows_read": 17,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 17
+      }
+    },
+    {
+      "tool_slug": "scale-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/scale-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:05.553003+00:00",
+      "sha256": "da21e30e75a551b979d370c47913630c0095ddc4375ef163623197e2dcf5e2a5",
+      "api_snapshot": "2026-11-12T12:03:05.371Z",
+      "public_total": 14,
+      "rows_read": 14,
+      "truncated": false,
+      "eligible_rows": 1,
+      "excluded": {
+        "not_confirmed": 13
+      }
+    },
+    {
+      "tool_slug": "siena-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/siena-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:09.373789+00:00",
+      "sha256": "38f6689ed31b79f6d100862d0f67c0157a4aa3e4f6e0943a557abcf15be870ce",
+      "api_snapshot": "2026-11-12T12:03:09.074Z",
+      "public_total": 44,
+      "rows_read": 44,
+      "truncated": false,
+      "eligible_rows": 20,
+      "excluded": {
+        "not_confirmed": 24
+      }
+    },
+    {
+      "tool_slug": "snorkel-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/snorkel-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:12.947740+00:00",
+      "sha256": "462648a99b62404f4391f4d09a37f8ac887de537309ac99e9c082e8b1fc6df52",
+      "api_snapshot": "2026-11-12T12:03:12.757Z",
+      "public_total": 14,
+      "rows_read": 14,
+      "truncated": false,
+      "eligible_rows": 3,
+      "excluded": {
+        "not_confirmed": 11
+      }
+    },
+    {
+      "tool_slug": "together-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/together-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:16.608404+00:00",
+      "sha256": "dcaf98d4b1e633dc077201a561a3c3e0e2538a085953c5fe3cc99501a89b1c20",
+      "api_snapshot": "2026-11-12T12:03:16.242Z",
+      "public_total": 37,
+      "rows_read": 37,
+      "truncated": false,
+      "eligible_rows": 20,
+      "excluded": {
+        "not_confirmed": 17
+      }
+    },
+    {
+      "tool_slug": "typesafe-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/typesafe-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:20.105751+00:00",
+      "sha256": "f645ccb6e37a25ba6bb8973d717d8fbfba3cb8acbde2911008c24f0d7f21c4a1",
+      "api_snapshot": "2026-11-12T12:03:20.005Z",
+      "public_total": 5,
+      "rows_read": 5,
+      "truncated": false,
+      "eligible_rows": 1,
+      "excluded": {
+        "not_confirmed": 4
+      }
+    },
+    {
+      "tool_slug": "vectra-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/vectra-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:23.751033+00:00",
+      "sha256": "276221853ba19da2660603ee1885fcaf251e0343439b8001e97f9148db0c4028",
+      "api_snapshot": "2026-11-12T12:03:23.413Z",
+      "public_total": 39,
+      "rows_read": 39,
+      "truncated": false,
+      "eligible_rows": 0,
+      "excluded": {
+        "not_confirmed": 39
+      }
+    },
+    {
+      "tool_slug": "vic-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/vic-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:27.420085+00:00",
+      "sha256": "6de3507225a90c84d88cb313d253dce44bf42b2fdb5b6130da363525daba785f",
+      "api_snapshot": "2026-11-12T12:03:27.183Z",
+      "public_total": 21,
+      "rows_read": 21,
+      "truncated": false,
+      "eligible_rows": 10,
+      "excluded": {
+        "not_confirmed": 11
+      }
+    },
+    {
+      "tool_slug": "viz-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/viz-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:30.944264+00:00",
+      "sha256": "aef8ebb6c4f0a93cbd4d6b7bb2f2f9638d2f6f13c55e683a0d9567eb54b8d704",
+      "api_snapshot": "2026-11-12T12:03:30.787Z",
+      "public_total": 8,
+      "rows_read": 8,
+      "truncated": false,
+      "eligible_rows": 3,
+      "excluded": {
+        "not_confirmed": 5
+      }
+    },
+    {
+      "tool_slug": "yellow-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/yellow-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:35.139713+00:00",
+      "sha256": "ed06d039627fdf9cd573affb15bf3a4a2276e87d1cf193202d41b980324cc80b",
+      "api_snapshot": "2026-11-12T12:03:34.873Z",
+      "public_total": 27,
+      "rows_read": 27,
+      "truncated": false,
+      "eligible_rows": 6,
+      "excluded": {
+        "not_confirmed": 21
+      }
+    },
+    {
+      "tool_slug": "zendesk-ai",
+      "url": "https://www.usedby.ai/api/v1/tools/zendesk-ai/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:39.123159+00:00",
+      "sha256": "abcce9e90beec5d7f115524567f89f6491cb26a08109726a8a42f147d1696190",
+      "api_snapshot": "2026-11-12T12:03:38.788Z",
+      "public_total": 28,
+      "rows_read": 28,
+      "truncated": false,
+      "eligible_rows": 9,
+      "excluded": {
+        "not_confirmed": 19
+      }
+    },
+    {
+      "tool_slug": "zest",
+      "url": "https://www.usedby.ai/api/v1/tools/zest/customers?limit=100",
+      "collected_at": "2026-11-12T12:03:43.150148+00:00",
+      "sha256": "d008010e564b93ec2853295462763ee1029c9d91578dafec0a900752f371e2bc",
+      "api_snapshot": "2026-11-12T12:03:42.823Z",
+      "public_total": 33,
+      "rows_read": 33,
+      "truncated": false,
+      "eligible_rows": 19,
+      "excluded": {
+        "not_confirmed": 14
+      }
+    }
+  ],
+  "license": "CC-BY-4.0"
+}
