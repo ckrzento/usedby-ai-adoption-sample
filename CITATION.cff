@@ -4,7 +4,7 @@ title: "usedby public AI adoption sample"
 type: dataset
 authors:
   - name: usedby
-version: "2026.11.12.4"
+version: "2026.11.12.5"
 date-released: "2026-11-12"
 license: CC-BY-4.0
 url: "https://github.com/ckrzento/usedby-ai-adoption-sample"
